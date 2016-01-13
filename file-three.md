@@ -25,11 +25,26 @@ _注意：以上任何一个命令都会使 vim 进入 insert 模式，进入该
 
 _说明： ```<X>``` 部分是对操作内容的描述，如果要删除一个单词，就输入 ```dw``` 或者 ```de```，要复制当前位置到行尾的内容，就输入 ```y$```，要删除后面 3 个字符并插入，就输入 ```c3l``` 诸如此类_
 
+> 尝试在下面的文本中进行复制粘贴练习
+
+```
+Try to delete this line.
+And paste it under this line.
+Cut foo and paste before bar, looks like the next line.
+Cut and paste before foo bar.
+```
+
 #### 替换
 - ```r<X>``` 将当前字符替换为 X
 - ```gu<X>``` 将指定的文本转换为小写
 - ```gU<X>``` 将指定的文本转换为大写
 - ```:%s/<search>/<replace>/``` 查找 search 内容并替换为 replace 内容
+
+> 尝试修改下列文本的大小写
+
+```
+Change this line to UPPERCASE, THEN TO lowercase.
+```
 
 #### 撤销、重做
 - ```u``` 撤销
@@ -41,13 +56,3 @@ _说明： ```<X>``` 部分是对操作内容的描述，如果要删除一个�
 - ```:wq``` or ```ZZ``` 保存并退出
 - ```:q!``` 强制退出，不保存
 - ```:saveas <new filename>``` 文件另存为
-
-> 尝试在下面的文本中进行练习
-
-```
-Try to delete this line.
-And paste it under this line.
-Cut foo and paste before bar, looks like the next line.
-Cut and paste before foo bar.
-Change this line to UPPERCASE, THEN TO lowercase.
-```
