@@ -46,6 +46,8 @@ Cut and paste before foo bar.
 Change this line to UPPERCASE, THEN TO lowercase.
 ```
 
+> 还有个更好玩的命令 ```g~<X>```，先将光标定位到上面那行文本，然后执行 ```0g~$``` 看看发生了什么。
+
 #### 撤销、重做
 - ```u``` 撤销
 - ```Ctrl-r``` 重做
