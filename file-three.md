@@ -23,7 +23,7 @@ _说明： ```<X>``` 部分是对操作内容的描述，如果要删除一个�
 #### 保存文件
 - ```:w``` 保存当前文件
 - ```:wa``` 保存全部文件
-- ```:wq``` 或 ```ZZ``` 保存并退出
+- ```:wq``` or ```ZZ``` 保存并退出
 - ```:saveas <new filename>``` 文件另存为
 
 > 尝试在下面的文本中进行练习
@@ -33,5 +33,5 @@ Try to delete this line.
 And paste it under this line.
 Cut foo and paste before bar, looks like the next line.
 Cut and paste before foo bar.
-Find all of foo and replace to test.
+
 ```
