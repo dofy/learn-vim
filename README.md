@@ -26,3 +26,13 @@
 
 _注意：命令区分大小写（需要注意的事项会出现在当前行这样的符号中）_
 ```
+
+### 导航
+
+- [光标的移动](blob/master/file-one.md)
+- [打开文件、查找内容](blob/master/file-two.md)
+- [文档的修改与保存](blob/master/file-three.md)
+- [一些小技巧](blob/master/file-four.md)
+- [分屏与标签页](blob/master/file-five.md)
+- [块操作](blob/master/file-six.md)
+- [vim 中的宏](blob/master/file-seven.md)
