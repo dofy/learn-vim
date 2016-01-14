@@ -72,21 +72,8 @@ p 把刚才删掉的粘回来
 - ```gg=G``` 当前文档全文自动排版
 - ```<N>==``` or ```=<N>=``` 对从当前行开始的 N 行进行自动排版
 
-> 另外，还可以利用[第二章](file-two.md)中提到的匹配搜索对代码块进行批量排版，尝试下列代码中的操作。
+> 另外，还可以利用[第二章](file-two.md)中提到的匹配搜索对代码块进行批量排版，尝试用 ```gf``` 命令打开 file-four-demo.js 按照里面的说明进行操作
 
-```javascript
-(function(win, doc) { // 光标定位到前面的 ｛ 然后按 ＝％
-var n = ((1 + 2) * (3 + 4)) / 7;
-var a = [1, 2, 3, 4, 5, 6, 7];
-var f = function(b) {
-if(b) {
-return false;
-} else {
-return true;
-}
-};
-})(window, document);
-```
 如果智能缩进设置生效了，执行后会看到如[第二章](file－two.md)中一样的排版效果。
 
 [下一章](file-five.md)将介绍分屏和标签页。
