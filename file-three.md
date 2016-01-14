@@ -59,4 +59,4 @@ Change this line to UPPERCASE, THEN TO lowercase.
 - ```:q!``` 强制退出，不保存
 - ```:saveas <new filename>``` 文件另存为
 
-> 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继续下一章的学习。 file-four.md
+> 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继续[下一章](file-four.md)的学习。

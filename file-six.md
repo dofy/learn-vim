@@ -2,4 +2,4 @@
 
 
 
-接下来我们说说录制宏 file-seven.md
+接下来我们说说[vim 中的宏](file-seven.md)。

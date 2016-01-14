@@ -29,7 +29,7 @@ _注意： ```n``` 和 ```N``` 是有方向性的，若你之前通过 ```*``` �
 >
 > 上面的 “注意” 中有几个字符 "n"，你可以在那试试行内查找并感受下 ```;``` 和 ```,``` 的方向性。
 
-下一课（ file-three.md ）将介绍文档的修改，在这之前先简单介绍一下 vim 的 buffer，简单理解 buffer 就是当前 vim session 的文件历史记录。
+[下一课](file-three.md)将介绍文档的修改，在这之前先简单介绍一下 vim 的 buffer，简单理解 buffer 就是当前 vim session 的文件历史记录。
 
 > 现在你的 buffer 中应该已经有两个文件了，你可以用 ```:buffers``` 或 ```:ls``` 命令查看，看到 buffer 列表了吧，大概是这个样子的：
 
@@ -46,4 +46,4 @@ Press ENTER or type command to continue
 > - ```:bp``` 打开缓存中上一个文件
 > - ```:b<N>``` 打开缓存中第 N 个文件
 >
-> 当然你也可以使用 ```:Ex``` 命令，选择 file-three.md 并打开，进入第三课。
+> 当然你也可以使用 ```:Ex``` 命令，选择 file-three.md 并打开，进入[第三课](file-three.md)。
