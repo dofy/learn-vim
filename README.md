@@ -45,3 +45,16 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - more settings
 - other mode
 - plugins
+
+### 推荐另外几个出色的 vim 教程
+
+- 控制台运行 ```vimtutor``` 这是 vim 官方实操教程
+- [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html) 很不错的入门教程
+- [vim galore](https://github.com/mhinz/vim-galore) 更新频繁，vim 进阶必读
+
+#### Cheatsheets
+
+- http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
+- http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+- https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
+- http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
