@@ -38,3 +38,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [分屏与标签页](file-five.md)
 1. [块操作](file-six.md)
 1. [vim 中的宏](file-seven.md)
+
+### TODO
+
+- vimdiff
+- more settings
+- other mode
+- plugins
