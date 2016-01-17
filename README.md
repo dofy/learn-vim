@@ -9,7 +9,7 @@
 1. 进入控制台
 1. clone 项目到本地
 1. 进入项目文件夹
-1. 执行命令 `vim file-one.txt`
+1. 执行命令 `vim file-one.md`
 
 ### 排版规范
 
