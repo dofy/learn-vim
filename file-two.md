@@ -75,4 +75,6 @@ Press ENTER or type command to continue
 > - `:bp` 打开缓存中上一个文件
 > - `:b<N>` 打开缓存中第 N 个文件
 >
+> 你也可以使用 `:bdelete #numb` 来删除所要关闭的缓冲区。
+> 
 > 当然你也可以使用 `:Ex` 命令，选择 file-three.md 并打开，进入[第三章](file-three.md)。
