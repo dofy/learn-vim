@@ -33,6 +33,8 @@ named file-one.md via following command "vim file-one.md"
 - `$` 到行尾
 - `Ctrl-d` 向下移动半页
 - `Ctrl-u` 向上移动半页
+- `Ctrl-f` 向下移动一页
+- `Ctrl-b` 向上移动一页
 - `:<N>` or `<N>gg` 跳转到第 N 行
 - `:+<N>` or `<N>j` 向下跳 N 行
 - `:-<N>` or `<N>k` 向上跳 N 行
