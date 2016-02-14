@@ -67,3 +67,5 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+
+**再次感谢您的关注！如果爱，请分享。爱极客公园，爱 VIM！**
