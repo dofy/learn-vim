@@ -11,12 +11,12 @@
 
 ```javascript
 var myArray = [
-Ctrl-v 进入块操作，$ 到行尾，j 到下一行（做！）。输入 <单引号><逗号><Esc> 完成第一步，继续。
+Ctrl-v 进入块操作，$ 到行尾，j 到下一行（做！）。
 按 j 到下一行
 下面还好多行，干脆来个 4j 多跳几行
 http://www.geekpark.net
 http://www.geekpark.net
-以后看好行号再跳！现在按 A 插入
+以后看好行号再跳！现在按 A 插入，输入 <单引号><逗号><Esc> 完成第一步。
 // Oops... 跳多了，没事，按 k 回到上一行
 ];
 ```
