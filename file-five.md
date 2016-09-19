@@ -7,7 +7,7 @@ copy 代码到当前文档（场景：复制 html 元素类名到 css 文档）�
 
 - `:split` 缩写 `:sp` or `Ctrl-w s` 上下分屏
 - `:vsplit` 缩写 `:vs` or `Ctrl-w v` 左右分屏
-- `:diffsplit` 缩写 `:diffs` diff 模式打开一个分屏，后面可以加上 <filename>
+- `:diffsplit` 缩写 `:diffs` diff 模式打开一个分屏，后面可以加上 {filename}
 
 #### 窗口跳转
 
