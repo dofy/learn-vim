@@ -6,19 +6,19 @@
 因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，即可以当作说明文档来
 阅读，也可以用 vim 打开文件进行实际操作（建议采用后者）。
 
-### 如何使用
+## 如何使用
 
 1. 进入控制台
 1. clone 项目到本地
 1. 进入项目文件夹
 1. 执行命令 `vim file-one.md`
 
-### 排版规范
+## 排版规范
 
 ```Markdown
-### 大标题表示一大类
+## 大标题表示一大类
 
-#### 小标题表示该大类下的小分类
+### 小标题表示该大类下的小分类
 
 没有任何格式的文本为正常描述，只有阅读功能。
 
@@ -31,7 +31,7 @@
 _注意：命令区分大小写（需要注意的事项会出现在当前行这样的符号中）_
 ```
 
-### 导航
+## 导航
 
 1. [光标的移动](file-one.md)
 1. [打开文件、查找内容](file-two.md)
@@ -41,27 +41,27 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [块操作](file-six.md)
 1. [vim 中的宏](file-seven.md)
 
-### Tips
+## Tips
 
 - 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打开相关文件
 - 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会在[第二章](file-two.md)中讲到）
 - 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后面加上 `!`
 
-### TODO
+## TODO
 
 - vimdiff
 - more settings
 - other mode
 - plugins
 
-### 推荐另外几个出色的 vim 教程
+## 推荐另外几个出色的 vim 教程
 
 - 控制台运行 `vimtutor` 这是 vim 官方实操教程
 - [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html) 很不错的入门教程
 - [vim galore](https://github.com/mhinz/vim-galore) 更新频繁，vim 进阶必读
 - [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
 
-#### Cheatsheets
+### Cheatsheets
 
 - http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
