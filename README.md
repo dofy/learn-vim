@@ -33,6 +33,8 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ## 导航
 
+### 基础操作
+
 1. [光标的移动](file-one.md)
 1. [打开文件、查找内容](file-two.md)
 1. [文档的修改与保存](file-three.md)
@@ -40,6 +42,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [分屏与标签页](file-five.md)
 1. [块操作](file-six.md)
 1. [vim 中的宏](file-seven.md)
+
+### 附加内容
+
+1. [vim 插件](plugins.md)
 
 ## Tips
 
@@ -52,7 +58,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - vimdiff
 - more settings
 - other mode
-- plugins
+- ✅ [plugins](plugins.md)
 
 ## 推荐另外几个出色的 vim 教程
 
