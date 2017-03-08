@@ -55,10 +55,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ## TODO
 
-- vimdiff
-- more settings
-- other mode
-- ✅ [plugins](plugins.md)
+- [ ] vimdiff
+- [ ] more settings
+- [ ] other mode
+- [x] [plugins](plugins.md)
 
 ## 推荐另外几个出色的 vim 教程
 
