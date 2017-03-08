@@ -51,7 +51,7 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 #### Example
 
-```bash
+```vim
 " 指定插件保存位置
 call plug#begin('~/.vim/plugged')
 
