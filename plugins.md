@@ -15,7 +15,7 @@
 ### 安装
 
 [下载 plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
-文件，放入 `autoload` 文件夹中。
+文件，放入 `autoload` 文件夹中（一般该文件夹位于 `~/.vim/autoload/`）。
 
 #### Unix
 
