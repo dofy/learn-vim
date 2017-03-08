@@ -53,7 +53,7 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 ```vim
 " 指定插件保存位置
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/bundle')
 
 " 注意要使用单引号
 
