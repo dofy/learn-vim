@@ -61,7 +61,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [vim galore](https://github.com/mhinz/vim-galore) 更新频繁，vim 进阶必读
 - [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
 
-### Cheatsheets
+## Cheatsheets
 
 - http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
