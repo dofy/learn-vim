@@ -47,7 +47,7 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 1. 插件列表，以 `Plug` 命令开头
 1. 用 `call plug#end()` 结束，以初始化插件系统
   - 这将会自动开启 `filetype plugin indent on` 和 `syntax enable`，如果不希望这
-  样，你可以在该配置后重制你的设置，例如：`filetype indent off`, `syntax off`
+  样，你可以在该配置后重置你的设置，例如：`filetype indent off`, `syntax off`
 
 #### Example
 
