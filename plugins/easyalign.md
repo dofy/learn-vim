@@ -143,8 +143,7 @@ let longword = others = 'some content'; // string
 
 _注意：上表中提到的 `<Bar>` 键即 `|` 键_
 
-> 尝试在上表中按 `gaip*|` 对 markdown 表格进行对齐，按 `u` 撤销操作，再尝试一下
-> `gaip<Enter><Enter>*|`
+> 尝试在上表中按 `gaip*|` 对 markdown 表格进行对齐
 
 ## Tips
 
@@ -153,6 +152,8 @@ _注意：上表中提到的 `<Bar>` 键即 `|` 键_
 在等待输入匹配符，命令区出现 `:EasyAlign (_)` 字样时，可以按  `<Enter>` 键选择对
 齐方向，按一次切换为右对齐，显示 `:EasyAlign[R] (_)`，再按一次切换为居中对齐，显
 示为 `:EasyAlign[C] (_)`，再按切换回默认的左对齐，显示也恢复原样。
+
+> 在上面的 markdown 表格中尝试一下 `gaip<Enter><Enter>*|`
 
 ### 正则匹配
 
