@@ -104,7 +104,7 @@ let longword = others = 'some content';// string
 下面解释一下按键的意思：
 
 - `gaip `
-  - `ga` 是开启 EasyAlign 的快捷键
+  - `ga` 是开启 EasyAlign 的快捷键，我们在 `.vimrc` 配置文件中定义的
   - `ip` 是定义操作区域，可以用任意选择操作命令完成，`ip` 是选择当前段落，如果光
   标在代码第一行，则可以用 `2j` 代替 `ip`
   - 此时命令区域会出现 `:EasyAlign (_)` 字样，表示等待匹配输入
