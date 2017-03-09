@@ -56,9 +56,9 @@
 
 ## vim-plug 介绍
 
-### 官网地址（github）
+### 项目地址
 
-[https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+https://github.com/junegunn/vim-plug
 
 ### 安装
 
