@@ -143,7 +143,8 @@ let longword = others = 'some content'; // string
 
 _注意：上表中提到的 `<Bar>` 键即 `|` 键_
 
-> 尝试在上表中按 `gaip*|` 对 markdown 表格进行对齐
+> 尝试在上表中按 `gaip*|` 对 markdown 表格进行对齐，按 `u` 撤销操作，再尝试一下
+> `gaip<Enter><Enter>*|`
 
 ## Tips
 
