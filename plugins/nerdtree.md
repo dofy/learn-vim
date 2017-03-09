@@ -2,6 +2,10 @@
 
 NERDTree 是 vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
 
+## 项目地址
+
+https://github.com/scrooloose/nerdtree
+
 ## 安装
 
 > 修改 `.vimrc` 配置，在 `call plug#begin()` 后面添加如下配置
