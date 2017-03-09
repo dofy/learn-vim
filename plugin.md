@@ -147,3 +147,4 @@ _注意：更多命令查看官网介绍_
    了插件，还有很多 vim 脚本
 1. [Vim Awesome](http://vimawesome.com/) vim 插件推荐
 1. [:best of Vim](http://www.bestofvim.com/plugin/) 常用插件推荐
+1. 本教程也将在 [插件推荐](plugins/index.md) 中不定期更新一些优秀插件以及使用说明
