@@ -49,6 +49,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [插件推荐](plugins/index.md)
   1. [NERDTree](plugins/nerdtree.md)
   1. [EasyAlign](plugins/easyalign.md)
+  1. [Airline & Themes](plugins/airline.md)
 
 ## Tips
 

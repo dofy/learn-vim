@@ -7,3 +7,7 @@
 - [EasyAlign](easyalign.md)
 
   EasyAlign 是一款用来做字符对齐的插件，简直是强迫症患者的福音。
+
+- [Airline & Themes](airline.md)
+
+  Airline 可以在 vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
