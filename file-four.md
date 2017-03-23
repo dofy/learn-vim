@@ -37,8 +37,9 @@ vim .vimrc
 >
 > 修改完成执行 `:wq` 或者 `ZZ` 保存退出，再次进入 vim 时，你的这些配置就已经生效了
 >
-> 当然，机智如我也为你准备好了一份 vimrc-demo 文件，你可以在控制台执行
-> `cp vimrc-demo ~/.vimrc` 直接使用，再次启动 vim 你的配置就应该生效了。
+> 当然，机智如我也为你准备好了一份 [vimrc](vimrc.vim) 样本文件，你可以在控制台执行
+> `cp vimrc.vim ~/.vimrc` 直接使用，再次启动 vim 或在 vim 中执行  `:source ~/.vimrc`你的配置就
+> 应该生效了。
 
 ## 清除搜索高亮
 
