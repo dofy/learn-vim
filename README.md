@@ -78,4 +78,12 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 
+## 捐助
+| 微信 | 支付宝 |
+| --- | --- |
+| ![微信支付][wechat] | ![支付宝支付][alipay] |
+
 **再次感谢您的关注！如果爱，请分享。爱极客公园，爱 VIM！**
+
+[wechat]: https://user-images.githubusercontent.com/344197/33651653-a02eb7be-daa1-11e7-9e09-82cfbeec2f98.png
+[alipay]: https://user-images.githubusercontent.com/344197/33651835-2d494894-daa2-11e7-932f-06adb8795f15.png
