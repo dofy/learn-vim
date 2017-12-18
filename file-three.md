@@ -15,7 +15,7 @@
 - `O` 在上一行插入
 
 _注意：以上任何一个命令都会使 vim 进入 insert 模式，进入该模式后光标会发生变化，这时输入的
-文字会直接出现在文档中，按 `Esc` 键退出 insert 模式。_
+文字会直接出现在文档中，按 `Esc` 键或 `Ctrl-[` 退出 insert 模式。_
 
 ### 删除(并保存到 vim 剪贴板)
 
@@ -76,7 +76,8 @@ Change this line to UPPERCASE, THEN TO lowercase.
 - `:w` 保存当前文件
 - `:wa` 保存全部文件
 - `:wq` or `ZZ` 保存并退出
-- `:q!` 强制退出，不保存
+- `:q!` or `ZQ` 强制退出，不保存
 - `:saveas <new filename>` 文件另存为
+- `:w <new filename>` 文件另存一份名为 `<new filename>` 的副本并继续编辑原文件
 
 > 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继续[下一章](file-four.md)的学习。
