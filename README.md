@@ -1,4 +1,4 @@
-# learn-vim
+# Vim 实操教程（Learn Vim）
 
 以我个人学习 vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 vim 的，你必须在实际
 应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
@@ -63,6 +63,13 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [ ] more settings
 - [ ] other mode
 - [x] [plugins](plugin.md)
+
+## 推荐几个 vim 配置方案
+
+  - [dofy / **7th-vim**](https://github.com/dofy/7th-vim)
+  - [kepbod / **ivim**](https://github.com/kepbod/ivim)
+  - [chxuan / **vimplus**](https://github.com/chxuan/vimplus)
+  - [SpaceVim / **SpaceVim**](https://github.com/SpaceVim/SpaceVim)
 
 ## 推荐另外几个出色的 vim 教程
 
