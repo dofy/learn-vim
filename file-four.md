@@ -41,6 +41,8 @@ vim .vimrc
 > `cp vimrc.vim ~/.vimrc` 直接使用，再次启动 vim 或在 vim 中执行  `:source ~/.vimrc`你的配置就
 > 应该生效了。
 
+_**[ AD ]** 当然你也可以在我维护的另外一个项目 [7th-vim](https://github.com/dofy/7th-vim) 中找到一个更为完整的配置方案。_
+
 ## 清除搜索高亮
 
 前面提到的配置中，有一项是高亮全部搜索结果 `:set hlsearch`，其作用是当你执行 `/`
