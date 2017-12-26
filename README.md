@@ -6,6 +6,8 @@
 因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，即可以当作说明文档来
 阅读，也可以用 vim 打开文件进行实际操作（建议采用后者）。
 
+**💡 现在也可以进入 [ Telegram Group ](https://t.me/The7thVim) 进行提问或讨论。**
+
 ## 如何使用
 
 1. 进入控制台
@@ -85,10 +87,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 
-## 捐助
-| 微信 | 支付宝 | Bitcoin |
-| --- | --- | --- |
-| ![微信支付][wechat] | ![支付宝支付][alipay] | ![Bitcoin][bitcoin] |
+## 如果觉得本教程对你有帮助，可以给作者买杯咖啡鼓励一下 ☕️
+| 微信              | 支付宝            | Bitcoin             |
+| ---               | ---               | ---                 |
+| ![Wechat][wechat] | ![Alipay][alipay] | ![Bitcoin][bitcoin] |
 
 **再次感谢您的关注！如果爱，请分享。爱极客公园，爱 VIM！**
 
