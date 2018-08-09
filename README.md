@@ -87,13 +87,4 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 
-## 如果觉得本教程对你有帮助，可以给作者买杯咖啡鼓励一下 ☕️
-| 微信              | 支付宝            | Bitcoin             |
-| ---               | ---               | ---                 |
-| ![Wechat][wechat] | ![Alipay][alipay] | ![Bitcoin][bitcoin] |
-
 **再次感谢您的关注！如果爱，请分享。爱极客公园，爱 VIM！**
-
-[wechat]: https://user-images.githubusercontent.com/344197/33651653-a02eb7be-daa1-11e7-9e09-82cfbeec2f98.png
-[alipay]: https://user-images.githubusercontent.com/344197/33651835-2d494894-daa2-11e7-932f-06adb8795f15.png
-[bitcoin]: https://user-images.githubusercontent.com/344197/33653103-d7863d68-daa6-11e7-9e74-f5d88954134e.png
