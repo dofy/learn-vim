@@ -25,7 +25,7 @@ _注意：所有小写单词都是以分词符作为单词界限，大写字母�
 This project's GitHub url is https://github.com/dofy/learn-vim
 Please clone it to your local folder and open the first file which is
 named file-one.md via following command "vim file-one.md"
-and welcome to http://geekpark.net :)
+and welcome to https://geekpark.net :)
 ```
 
 ### 块级
