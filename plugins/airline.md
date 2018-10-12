@@ -1,6 +1,6 @@
 # Airline & Themes
 
-Airline 可以在 vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
+Airline 可以在 Vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
 
 ## 项目地址
 
@@ -16,7 +16,7 @@ Airline 可以在 vim 中显示更友好的状态栏，再配以漂亮的配色�
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 ```
 
-> vim 中执行 `:source ~/.vimrc` 重载配置文件
+> Vim 中执行 `:source ~/.vimrc` 重载配置文件
 >
 > 执行 `:PlugInstall` 安装 Airline 和 Aairline Themes 插件
 >
@@ -29,9 +29,9 @@ set laststatus=2    " 始终显示状态栏
 let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
 ```
 
-> 重载配置文件使之生效，如果没有效果可以尝试重启 vim
+> 重载配置文件使之生效，如果没有效果可以尝试重启 Vim
 
-现在你应该会看到 vim 下方显示出了一条状态栏，显示信息一般会包含 **当前模式**，
+现在你应该会看到 Vim 下方显示出了一条状态栏，显示信息一般会包含 **当前模式**，
 **当前文件**，**文件类型**，**文件编码**以及**当前行列信息**。
 
 因为我们同时安装了 Airline Themes 插件，所以可以通过如下方式设置 Airline 的样式。

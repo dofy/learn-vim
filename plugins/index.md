@@ -2,7 +2,7 @@
 
 - [NERDTree](nerdtree.md)
 
-  NERDTree 是 vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
+  NERDTree 是 Vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
 
 - [EasyAlign](easyalign.md)
 
@@ -10,4 +10,4 @@
 
 - [Airline & Themes](airline.md)
 
-  Airline 可以在 vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
+  Airline 可以在 Vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。

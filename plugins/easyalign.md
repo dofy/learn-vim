@@ -14,9 +14,9 @@ https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 ```
 
-_注意：vim 插件管理器的使用请参考[plugin.md](../plugin.md#插件管理)_
+_注意：Vim 插件管理器的使用请参考[plugin.md](../plugin.md#插件管理)_
 
-> 运行 vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
+> 运行 Vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
 >
 ```
 1 Updated. Elapsed time: 6.008607 sec.

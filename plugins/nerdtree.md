@@ -1,6 +1,6 @@
 # NERDTree
 
-NERDTree 是 vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
+NERDTree 是 Vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
 
 ## 项目地址
 
@@ -14,9 +14,9 @@ https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 ```
 
-_注意：vim 插件管理器的使用请参考[plugin.md](../plugin.md#插件管理)_
+_注意：Vim 插件管理器的使用请参考 [plugin.md](../plugin.md#插件管理)_
 
-> 运行 vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
+> 运行 Vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
 >
 ```
 1 Updated. Elapsed time: 6.008607 sec.
