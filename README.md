@@ -79,7 +79,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html) 很不错的入门教程
 - [vim galore](https://github.com/mhinz/vim-galore) 更新频繁，vim 进阶必读
 - [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
-
+- [Vim教程网](https://vim.ink) 一个女生维护的Vim中文教程，持续更新中
 ## Cheatsheets
 
 - http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
