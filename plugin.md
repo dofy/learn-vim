@@ -1,11 +1,11 @@
-# vim 插件
+# Vim 插件
 
-虽然 vim 已经提供了非常强大的功能，但如果有几款好用的插件辅佐，更能让你的工作事
+虽然 Vim 已经提供了非常强大的功能，但如果有几款好用的插件辅佐，更能让你的工作事
 半功倍。
 
 ## 安装插件
 
-若要手动安装 vim 插件，需要完成如下步骤：
+若要手动安装 Vim 插件，需要完成如下步骤：
 
 1. 创建 `.vim` 文件夹
 
@@ -32,7 +32,7 @@
 
 1. 修改 `runtimepath`
 
-  通过修改 `runtimepath` 属性，可以让 vim 找到你要加载的插件，要查看 `runtimepath`
+  通过修改 `runtimepath` 属性，可以让 Vim 找到你要加载的插件，要查看 `runtimepath`
   属性可用 `:set runtimepath` 命令
 
   启用新插件可在 `.vimrc` 中添加如下配置
@@ -46,7 +46,7 @@
 
 ## 插件管理
 
-当你的插件越来越多，就需要一个管理器来管理 vim 插件了，市面上比较流行的插件管理
+当你的插件越来越多，就需要一个管理器来管理 Vim 插件了，市面上比较流行的插件管理
 器有以下几款：
 
 1. [vim-plug](https://github.com/junegunn/vim-plug)
@@ -123,7 +123,7 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 call plug#end()
 ```
 
-> 重启 vim 或重载 `.vimrc` 文件并执行 `:PlugInstall` 安装配置好的插件
+> 重启 Vim 或重载 `.vimrc` 文件并执行 `:PlugInstall` 安装配置好的插件
 >
 > 重载命令是 `:source ~/.vimrc`
 
@@ -141,10 +141,10 @@ _注意：更多命令查看官网介绍_
 
 ## 去哪里找插件
 
-1. [GitHub](https://github.com) 上有很丰富的 vim 插件资源，可以通过 `vim plug`
+1. [GitHub](https://github.com) 上有很丰富的 Vim 插件资源，可以通过 `vim plug`
 关键字进行搜索[查看所有相关资源](https://github.com/search?utf8=%E2%9C%93&q=vim+plugin)
-1. [Vim Scripts](http://www.vim.org/scripts/) vim 官方提供的脚本集合，注意里面除
-   了插件，还有很多 vim 脚本
-1. [Vim Awesome](http://vimawesome.com/) vim 插件推荐
+1. [Vim Scripts](http://www.vim.org/scripts/) Vim 官方提供的脚本集合，注意里面除
+   了插件，还有很多 Vim 脚本
+1. [Vim Awesome](http://vimawesome.com/) Vim 插件推荐
 1. [:best of Vim](http://www.bestofvim.com/plugin/) 常用插件推荐
 1. 本教程也将在 [插件推荐](plugins/index.md) 中不定期更新一些优秀插件以及使用说明

@@ -1,10 +1,10 @@
 # Vim 实操教程（Learn Vim）
 
-以我个人学习 vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 vim 的，你必须在实际
+以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，你必须在实际
 应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
 
 因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，即可以当作说明文档来
-阅读，也可以用 vim 打开文件进行实际操作（建议采用后者）。
+阅读，也可以用 Vim 打开文件进行实际操作（建议采用后者）。
 
 **💡 现在也可以进入 [ Telegram Group ](https://t.me/The7thVim) 进行提问或讨论。**
 
@@ -43,11 +43,11 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [一些小技巧](file-four.md)
 1. [分屏与标签页](file-five.md)
 1. [块操作](file-six.md)
-1. [vim 中的宏](file-seven.md)
+1. [Vim 中的宏](file-seven.md)
 
 ### 附加内容
 
-1. [vim 插件](plugin.md)
+1. [Vim 插件](plugin.md)
 1. [插件推荐](plugins/index.md)
     1. [NERDTree](plugins/nerdtree.md)
     1. [EasyAlign](plugins/easyalign.md)
@@ -66,20 +66,20 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [ ] other mode
 - [x] [plugins](plugin.md)
 
-## 推荐几个 vim 配置方案
+## 推荐几个 Vim 配置方案
 
   - [dofy / **7th-vim**](https://github.com/dofy/7th-vim)
   - [kepbod / **ivim**](https://github.com/kepbod/ivim)
   - [chxuan / **vimplus**](https://github.com/chxuan/vimplus)
   - [SpaceVim / **SpaceVim**](https://github.com/SpaceVim/SpaceVim)
 
-## 推荐另外几个出色的 vim 教程
+## 推荐另外几个出色的 Vim 教程
 
-- 控制台运行 `vimtutor` 这是 vim 官方实操教程
+- 控制台运行 `vimtutor` 这是 Vim 官方实操教程
 - [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html) 很不错的入门教程
-- [vim galore](https://github.com/mhinz/vim-galore) 更新频繁，vim 进阶必读
+- [Vim Galore](https://github.com/mhinz/vim-galore) 更新频繁，Vim 进阶必读
 - [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
-- [Vim教程网](https://vim.ink) 一个女生维护的Vim中文教程，持续更新中
+- [Vim 教程网](https://vim.ink) 一个女生维护的 Vim 中文教程网站，持续更新中
 ## Cheatsheets
 
 - http://www.nathael.org/Data/vi-vim-cheat-sheet.svg
