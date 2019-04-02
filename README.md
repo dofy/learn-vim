@@ -1,4 +1,4 @@
-# Vim 实操教程（Learn Vim）
+# Vim 实操教程（Learning Vim）
 
 以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，你必须在实际
 应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
@@ -12,8 +12,11 @@
 
 1. 进入控制台
 1. clone 项目到本地
+  > `git clone git@github.com:dofy/learn-vim.git`
 1. 进入项目文件夹
-1. 执行命令 `vim file-one.md`
+  > `cd learn-vim`
+1. 用 Vim 打开文件 `file-one.md`
+  > `vim file-one.md`
 
 ## 排版规范
 
