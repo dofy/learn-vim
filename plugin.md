@@ -14,14 +14,14 @@
   mkdir .vim
   ```
 
-1. 在 `.vim` 文件夹中创建 `bundle` 文件夹
+2. 在 `.vim` 文件夹中创建 `bundle` 文件夹
 
   ```bash
   cd .vim
   mkdir bundle
   ```
 
-1. copy 或 clone 插件文件
+3. copy 或 clone 插件文件
 
   ```bash
   cd bundle
@@ -30,7 +30,7 @@
 
   _注意：若插件没有 git 地址，也可以直接创建相关文件夹，并置一 `.vim` 文件于其中。_
 
-1. 修改 `runtimepath`
+4. 修改 `runtimepath`
 
   通过修改 `runtimepath` 属性，可以让 Vim 找到你要加载的插件，要查看 `runtimepath`
   属性可用 `:set runtimepath` 命令
