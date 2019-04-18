@@ -11,11 +11,11 @@
 ## 如何使用
 
 1. 进入控制台
-1. clone 项目到本地
+2. clone 项目到本地
   > `git clone git@github.com:dofy/learn-vim.git`
-1. 进入项目文件夹
+3. 进入项目文件夹
   > `cd learn-vim`
-1. 用 Vim 打开文件 `file-one.md`
+4. 用 Vim 打开文件 `file-one.md`
   > `vim file-one.md`
 
 ## 排版规范
