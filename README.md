@@ -83,8 +83,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [Vim Galore](https://github.com/mhinz/vim-galore) 更新频繁，Vim 进阶必读
 - [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
 - [Vim 教程网](https://vim.ink) 一个女生维护的 Vim 中文教程网站，持续更新中
+
 ## Cheatsheets
 
+- https://vim.rtorr.com/
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
