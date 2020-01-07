@@ -55,6 +55,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
     1. [NERDTree](plugins/nerdtree.md)
     1. [EasyAlign](plugins/easyalign.md)
     1. [Airline & Themes](plugins/airline.md)
+    1. [surround.vim](plugins/surround.md)
 
 ## Tips
 
@@ -67,6 +68,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [ ] vimdiff
 - [ ] more settings
 - [ ] other mode
+- [ ] text object
 - [x] [plugins](plugin.md)
 
 ## 推荐几个 Vim 配置方案
