@@ -13,5 +13,5 @@
   * [NERDTree](plugins/nerdtree.md)
   * [EasyAlign](plugins/easyalign.md)
   * [AirLine](plugins/airline.md)
-  * [surroung.vim](plugins/surround.md)
+  * [surround.vim](plugins/surround.md)
 
