@@ -73,24 +73,40 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ## 推荐几个 Vim 配置方案
 
-  - [dofy / **7th-vim**](https://github.com/dofy/7th-vim)
-  - [kepbod / **ivim**](https://github.com/kepbod/ivim)
-  - [chxuan / **vimplus**](https://github.com/chxuan/vimplus)
-  - [SpaceVim / **SpaceVim**](https://github.com/SpaceVim/SpaceVim)
+  - [dofy / **7th-vim**][7th-vim]
+  - [kepbod / **ivim**][kepbod]
+  - [chxuan / **vimplus**][chxuan]
+  - [SpaceVim / **SpaceVim**][spacevim]
 
 ## 推荐另外几个出色的 Vim 教程
 
 - 控制台运行 `vimtutor` 这是 Vim 官方实操教程
-- [简明 Vim 练级攻略](http://coolshell.cn/articles/5426.html) 很不错的入门教程
-- [Vim Galore](https://github.com/mhinz/vim-galore) 更新频繁，Vim 进阶必读
-- [每日一Vim](http://liuzhijun.iteye.com/category/270228) 共 30 篇，内容比较全
-- [Vim 教程网](https://vimjc.com) 一个女生维护的 Vim 中文教程网站，持续更新中
+- [简明 Vim 练级攻略][coolshell] 很不错的入门教程
+- [Vim Galore][vimgalore] 更新频繁，Vim 进阶必读
+- [每日一Vim][liuzhijun] 共 30 篇，内容比较全
+- [Vim 教程网][vimjc] 一个女生维护的 Vim 中文教程网站，持续更新中
 
 ## Cheatsheets
 
-- https://vim.rtorr.com/
-- http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
-- https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
-- http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+> [https://vim.rtorr.com][cheatsheets1]
+
+> [![002][cheatsheets2]][cheatsheets2]
+
+> [![003][cheatsheets3]][cheatsheets3]
+
+> [![004][cheatsheets4]][cheatsheets4]
 
 **再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
+
+[7th-vim]: https://github.com/dofy/7th-vim
+[kepbod]: https://github.com/kepbod/ivim
+[chxuan]: https://github.com/chxuan/vimplus
+[spacevim]: https://github.com/SpaceVim/SpaceVim
+[coolshell]: http://coolshell.cn/articles/5426.html
+[vimgalore]: https://github.com/mhinz/vim-galore
+[liuzhijun]: http://liuzhijun.iteye.com/category/270228
+[vimjc]: https://vimjc.com
+[cheatsheets1]: https://vim.rtorr.com/lang/zh_tw
+[cheatsheets2]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+[cheatsheets3]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
+[cheatsheets4]: http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
