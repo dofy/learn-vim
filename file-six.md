@@ -32,6 +32,6 @@ https://www.yahaha.net
 >
 > Done!
 
-_注意：选择行首行尾的操作也可以在选择完要处理的内容之后执行，即 `Ctrl-v jjj$',<Esc>`_
+_注意：选择行首行尾的操作也可以在选择完要处理的内容之后执行，即 `Ctrl-v jjj$A',<Esc>`_
 
 接下来我们说说 [Vim 中的宏](file-seven.md)。
