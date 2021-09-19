@@ -84,16 +84,20 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [每日一Vim][liuzhijun] 共 30 篇，内容比较全
 - [Vim 教程网][vimjc] 一个女生维护的 Vim 中文教程网站，持续更新中
 - [A book for learning the Vim editor][learnvim] 另一个 Learn Vim （英语）
+- [Open Vim][openvim] 交互式 Vim 教程
+- [QuickRef.ME/vim][quickref] Vim cheatsheet
 
 ## Cheatsheets
 
-> [https://vim.rtorr.com][cheatsheets1]
+> [Vim Cheat Sheet][cheatsheets1]
 
-> [![002][cheatsheets2]][cheatsheets2]
+> [A Great Vim Cheat Sheet][cheatsheets2]
 
 > [![003][cheatsheets3]][cheatsheets3]
 
 > [![004][cheatsheets4]][cheatsheets4]
+
+> [![005][cheatsheets5]][cheatsheets5]
 
 **再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
 
@@ -106,7 +110,10 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
 [vimjc]: https://vimjc.com
 [learnvim]: https://github.com/iggredible/Learn-Vim
+[openvim]: https://openvim.com/
+[quickref]: https://quickref.me/vim
 [cheatsheets1]: https://vim.rtorr.com/lang/zh_tw
-[cheatsheets2]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
-[cheatsheets3]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
-[cheatsheets4]: http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+[cheatsheets2]: https://vimsheet.com/
+[cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+[cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
+[cheatsheets5]: http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
