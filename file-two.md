@@ -45,17 +45,15 @@ Vim 中可以使用 `%` 对 `(` 和 `)`，`[` 和 `]`，`{` 和 `}` 进行匹配
 > 在下列文本中的 `()[]{}` 字符上按 `%` 看看效果，连续多按几次。
 
 ```javascript
-(function(win, doc) {
-    var n = ((1 + 2) * (3 + 4)) / 7;
-    var a = [1, 2, 3, 4, 5, 6, 7];
-    var f = function(b) {
-        if(b) {
-            return false;
-        } else {
-            return true;
-        }
-    };
-})(window, document);
+const func = (win, doc) => {
+  const SEVEN = ((1 + 2) * (3 + 4) * (5 - 6)) / 7;
+  const YU = [1, 2, [[3, 4], 5, 6], 7];
+  if (true) {
+    return SEVEN;
+  } else {
+    return YU;
+  }
+}
 ```
 
 [下一章](file-three.md)将介绍文档的修改，在这之前先简单介绍一下 Vim 的 buffer，简单理解
