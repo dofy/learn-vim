@@ -10,7 +10,7 @@
 
 1. 进入控制台
 2. clone 项目到本地
-  > `git clone git@github.com:dofy/learn-vim.git`
+  > `git clone https://github.com/dofy/learn-vim.git`
 3. 进入项目文件夹
   > `cd learn-vim`
 4. 用 Vim 打开文件 `file-one.md`
