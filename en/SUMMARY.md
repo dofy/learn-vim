@@ -1,6 +1,6 @@
 # Summary
 
-* [简介/导航](README.md)
+* [Summary/导航](README.md)
 * [第一章 光标的移动](file-one.md)
 * [第二章 打开文件、查找内容](file-two.md)
 * [第三章 文档的修改与保存](file-three.md)
