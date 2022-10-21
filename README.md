@@ -105,8 +105,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 > [![004][cheatsheets4]][cheatsheets4]
 
-> [![005][cheatsheets5]][cheatsheets5]
-
 **再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
 
 [7th-vim]: https://github.com/dofy/7th-vim
@@ -124,4 +122,3 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [cheatsheets2]: https://vimsheet.com/
 [cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 [cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
-[cheatsheets5]: http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
