@@ -12,17 +12,28 @@
 
 1. 进入控制台
 2. clone 项目到本地
-  ```
-  git clone https://github.com/dofy/learn-vim.git
-  ```
+   ```bash
+   git clone https://github.com/dofy/learn-vim.git
+   ```
 3. 进入项目文件夹
-  ```
-  cd learn-vim
-  ```
+   ```bash
+   cd learn-vim
+   ```
 4. 用 Vim 打开文件 `file-one.md`
-  ```
-  vim file-one.md
-  ```
+   ```bash
+   vim file-one.md
+   ```
+
+> **Note**
+> 如果你已经有了自己的 `.vimrc` 文件 (参考 [第四章](file-four.md)) 并在其中修改了一些默认设
+> 置，那么可能导致某些操作与教程不符。如遇此情况，你可以用下面的命令来运行 `Vim`：
+>
+> ```bash
+> # 不加载配置文件
+> vim -u NONE
+> # 加载特定配置文件
+> vim -u <filename>
+> ```
 
 ## 排版规范
 
