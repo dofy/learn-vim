@@ -1,6 +1,3 @@
-- [English](en/README.md)
-- [简体中文](zh-CN/README.md)
-
 - [Summary](en/README.md)
 - [Chapter 1: Moving the Cursor](en/chapter01.md)
 - [Chapter 2: Open the File, Find the Content](en/chapter02.md)
@@ -16,3 +13,4 @@
   - [EasyAlign](en/plugins/easyalign.md)
   - [AirLine](en/plugins/airline.md)
   - [surround.vim](en/plugins/surround.md)
+- [简体中文](zh-CN/README.md)
