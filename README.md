@@ -83,6 +83,7 @@ symbols such as the current line)_
 1. [Split screen and tabs](en/chapter05.md)
 1. [Block operations](en/chapter06.md)
 1. [Macros in Vim](en/chapter07.md)
+1. [Vim Modes](en/vim-modes.md)
 
 ### Additional content
 
