@@ -51,7 +51,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ```
 
-> **Note**
+> [!NOTE]
 >
 > 如果你已经有了自己的 `.vimrc` 文件 (参考 [第四章](file-four.md)) 并在其中修改
 > 了一些默认设置，那么可能导致某些操作与教程不符。如遇此情况，你可以用下面的命令
@@ -86,7 +86,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
    1. [Airline & Themes](plugins/airline.md)
    1. [surround.vim](plugins/surround.md)
 
-> **Note**
+> [!NOTE]
 >
 > - 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打
 >   开相关文件
@@ -108,7 +108,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 - [简明 Vim 练级攻略][coolshell] 很不错的入门教程
 - [Vim Galore][vimgalore] 更新频繁，Vim 进阶必读
 - [每日一 Vim][liuzhijun] 共 30 篇，内容比较全
-- [Vim 教程网][vimjc] 一个女生维护的 Vim 中文教程网站，持续更新中
 - [A book for learning the Vim editor][learnvim] 另一个 Learn Vim （英语）
 - [Open Vim][openvim] 交互式 Vim 教程
 - [QuickRef.ME/vim][quickref] Vim cheatsheet
@@ -134,7 +133,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [coolshell]: http://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
-[vimjc]: https://vimjc.com
 [learnvim]: https://github.com/iggredible/Learn-Vim
 [openvim]: https://openvim.com/
 [quickref]: https://quickref.me/vim

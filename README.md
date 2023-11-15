@@ -1,6 +1,6 @@
 # Vim Hands-On Tutorial（Learning Vim）
 
-[English](en/README.md) | [简体中文](zh-CN/README.md)
+[English](README.md) | [简体中文](../zh-CN/README.md)
 
 ## Intro
 
@@ -58,6 +58,20 @@ symbols such as the current line)_
 
 ```
 
+> [!NOTE]
+>
+> If you already have your own `.vimrc` file (refer to
+> [Chapter 4](file-four.md)) and have changed some of the defaults in it, it may
+> cause some operations to not match the tutorial. In this case, you can run
+> `Vim` with the following command:
+>
+> ```bash
+> # Do not load the configuration file
+> vim -u NONE
+> # Load a specific configuration file
+> vim -u <filename>
+> ```
+
 ## Index
 
 ### Basic operations
@@ -79,16 +93,16 @@ symbols such as the current line)_
    1. [Airline & Themes](plugins/airline.md)
    1. [surround.vim](plugins/surround.md)
 
-## Tips
-
-- In the tutorials, you can navigate to the next chapter or related chapters,
-  and locate the file name to open it by executing `gf` (goto file). Related
-  files
-- You can always open the relevant chapter to view, and then use `:bp` to go
-  back to the previous file (this command will (This command is covered in
-  [Chapter 2] (file-two.md)).
-- You may get a file-not-saved error when you exit the tutorial with `:q` or
-  `:qa`, try appending `! Try following the command with `! `.
+> [!NOTE]
+>
+> - In the tutorials, you can navigate to the next chapter or related chapters,
+>   and locate the file name to open it by executing `gf` (goto file). Related
+>   files
+> - You can always open the relevant chapter to view, and then use `:bp` to go
+>   back to the previous file (this command will (This command is covered in
+>   [Chapter 2] (file-two.md)).
+> - You may get a file not saved error when you exit the tutorial with `:q` or
+>   `:qa`, try adding `!` to the end of the command!
 
 ## Recommend a few Vim configurations
 
@@ -103,8 +117,6 @@ symbols such as the current line)_
 - [Concise Vim Practice Tips][coolshell] Great tutorial to get started!
 - [Vim Galore][vimgalore] Frequently updated, a must read for Vim.
 - [Daily Vim][liuzhijun] 30 articles, the content is more complete!
-- [Vim 教程网][vimjc] Vim Chinese tutorial site maintained by a girl,
-  continuously updated!
 - [A book for learning the Vim editor][learnvim] Another Learn Vim (English)
 - [Open Vim][openvim] Interactive Vim Tutorials
 - [QuickRef.ME/vim][quickref] Vim cheatsheet
@@ -131,7 +143,6 @@ VIM!**
 [coolshell]: http://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
-[vimjc]: https://vimjc.com
 [learnvim]: https://github.com/iggredible/Learn-Vim
 [openvim]: https://openvim.com/
 [quickref]: https://quickref.me/vim
