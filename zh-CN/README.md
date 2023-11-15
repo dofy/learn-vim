@@ -1,38 +1,33 @@
-# Vim Hands-On Tutorial（Learning Vim）
+# Vim 实操教程（Learning Vim）
 
-[English](README.md) | [简体中文](../zh-CN/README.md)
+[English](../en/README.md) | [简体中文](README.md)
 
-## Intro
+## 引言
 
-In my personal experience of learning Vim, it is very difficult to learn Vim by
-reading documentation or watching other people operate it. You have to be in the
-real world, in real scenarios, in order to familiarize yourself with the
-commands and master them.
+以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，
+你必须在实际应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
 
-Therefore, in order to meet the needs of learning and operating at the same
-time, all the files in the project are in Markdown format, which can be read as
-an explanation document, and can also be opened in Vim. You can read it as an
-explanatory document, and you can also use Vim to open the files for actual
-operation (the latter is recommended).
+因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，既可以当
+作说明文档来阅读，也可以用 Vim 打开文件进行实际操作（建议采用后者）。
 
-## How to Use
+## 如何使用
 
 1. 进入控制台
 2. clone 项目到本地
 
-```
+```bash
 git clone https://github.com/dofy/learn-vim.git
 ```
 
 3. 进入项目文件夹
 
-```
+```bash
 cd learn-vim
 ```
 
 4. 用 Vim 打开文件 `file-one.md`
 
-```
+```bash
 vim file-one.md
 ```
 
@@ -54,6 +49,19 @@ vim file-one.md
 _注意：命令区分大小写（需要注意的事项会出现在当前行这样的符号中）_
 ```
 
+> **Note**
+>
+> 如果你已经有了自己的 `.vimrc` 文件 (参考 [第四章](file-four.md)) 并在其中修改
+> 了一些默认设置，那么可能导致某些操作与教程不符。如遇此情况，你可以用下面的命令
+> 来运行 `Vim`：
+>
+> ```bash
+> # 不加载配置文件
+> vim -u NONE
+> # 加载特定配置文件
+> vim -u <filename>
+> ```
+
 ## 导航
 
 ### 基础操作
@@ -65,6 +73,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 1. [分屏与标签页](file-five.md)
 1. [块操作](file-six.md)
 1. [Vim 中的宏](file-seven.md)
+1. [Vim 的模式](file-modes.md)
 
 ### 附加内容
 
@@ -75,20 +84,20 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
    1. [Airline & Themes](plugins/airline.md)
    1. [surround.vim](plugins/surround.md)
 
-## Tips
-
-- 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打开
-  相关文件
-- 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会
-  在[第二章](file-two.md)中讲到）
-- 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后面
-  加上 `!`
+> **Note**
+>
+> - 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打
+>   开相关文件
+> - 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会
+>   在[第二章](file-two.md)中讲到）
+> - 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后
+>   面加上 `!`
 
 ## TODO
 
 - [ ] vimdiff
 - [ ] more settings
-- [ ] other mode
+- [x] other mode
 - [ ] text object
 - [x] [plugins](plugin.md)
 
@@ -120,8 +129,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 > [![004][cheatsheets4]][cheatsheets4]
 
-> [![005][cheatsheets5]][cheatsheets5]
-
 **再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
 
 [7th-vim]: https://github.com/dofy/7th-vim
@@ -139,5 +146,3 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [cheatsheets2]: https://vimsheet.com/
 [cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 [cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
-[cheatsheets5]:
-  http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
