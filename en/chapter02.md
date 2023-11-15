@@ -1,48 +1,61 @@
-# 打开文件、查找内容
+# Opening Files, Finding Content
 
-## 打开文件
+## Open Files
 
-哈，现在你已经在无意间学会了一种在 Vim 中打开文件的方式，虽然这种方式并不是最常用的，但却是最
-直接的，尤其是当你的代码中 include 了某文件时，下面介绍另外两种常用的打开方式。
+Ha, now you have learned a way to open files in Vim, although this way is not
+the most common, but it is the most direct, especially when your code includes a
+certain file, the following introduces two other commonly used open methods.
 
-### 在 Vim 中打开文件
+### Open files in Vim
 
-- `:e <filename>` 打开名为 filename 的文件，若文件不存在则创建之
-- `:Ex` 在 Vim 中打开目录树，光标选中后回车打开对应文件（提示：`-` 进入上级目录）
+- `:e <filename>` open the file which named `<filename>`, if the file is not
+  exists, it will create a new one
+- `:Ex` open the directory tree in Vim, press `-` to enter the parent directory
+  and press Enter to open the corresponding file
 
-## 查找
+## Find
 
-### 文档内查找
+### Find content in document
 
-- `*` 向后查找光标当前所在单词
-- `#` 向前查找光标当前所在单词
-- `/<search>` 向后查找指定字符串
-- `?<search>` 向前查找指定字符串
-- `n` 继续查找下一个
-- `N` 继续查找上一个
+- `*` find the word under the cursor and jump to the next
+- `#` find the word under the cursor and jump to the previous
+- `/<search>` find the specified string backward
+- `?<search>` find the specified string forward
+- `n` continue to find the next
+- `N` continue to find the previous
 
-_注意： `n` 和 `N` 是有方向性的，若你之前通过 `*` 查找，则 `n` 会继续向文档尾方向查找，`N`
-向文档首方向；反之，若你通过 `#` 查找，则 `n` 指向文档首，`N` 指向文档尾_
+_Note: `n` and `N` are directional. If you previously searched with `*`, `n`
+will continue to search toward the end of the document, and `N` toward the
+beginning of the document; conversely, if you search with `#`, `n` points to the
+beginning and `N` points to the end of the document._
 
-### 行内查找
+### Search in line
 
-- `f<X>` 当前行内向行尾方向查找并定位到字符 `X`
-- `t<X>` 当前行内向行尾方向查找并定位到字符 `X` 之前
-- `F<X>` 当前行内向行首方向查找并定位到字符 `X`
-- `T<X>` 当前行内向行首方向查找并定位到字符 `X` 之后
-- `;` 继续向当前方向查找下一个字符
-- `,` 向当前相反方向查找下一个字符
+- `f<X>` Finds `X` on a line toward the end of the line and positions the cursor
+  over the character `X`.`
+- `t<X>` Finds `X` on a line toward the end of the line and positions the cursor
+  over the character before `X`.
+- `F<X>` Finds `X` on a line toward the beginning of the line and positions the
+  cursor over the character `X`.
+- `T<X>` Finds `X` on a line toward the beginning of the line and positions the
+  cursor over the character after `X`.
+- `;` Find the next character in the current direction
+- `,` Find the previous character in the current direction
 
-> 当前文档中有几个 “Vim” 单词，你可以尝试用 `*` 和 `#` 进行查找并感受 `n` 和 `N` 的方向性。
+> There are several "Vim" words in the current document, you can try to use `*`
+> and `#` to find and feel the directionality of `n` and `N`.
 >
-> 上面的 “注意” 中有几个字符 "n"，你可以在那试试行内查找并感受下 `;` 和 `,` 的方向性。
+> And there are several "n" characters in the "Note" above, you can try to find
+> them in the line and feel the directionality of `;` and `,`.
 
-### 匹配查找
+### Matching
 
-Vim 中可以使用 `%` 对 `(` 和 `)`，`[` 和 `]`，`{` 和 `}` 进行匹配查找，当光标位于其中一个
-符号上时，按下 `%`，光标会跳到与之匹配的另外一个符号上。
+In Vim, you can use `%` to match `(` and `)`, `[` and `]`, `{` and `}`. When the
+cursor is on one of the symbols, press `%`, the cursor will jump to the other
+symbol that matches it.
 
-> 在下列文本中的 `()[]{}` 字符上按 `%` 看看效果，连续多按几次。
+> Press `%` on the `()[]{}` characters in the following text to see the effect,
+> and then press `n` to continue searching.
 
 ```javascript
 const func = (win, doc) => {
@@ -53,14 +66,15 @@ const func = (win, doc) => {
   } else {
     return YU;
   }
-}
+};
 ```
 
-[下一章](chapter03.md)将介绍文档的修改，在这之前先简单介绍一下 Vim 的 buffer，简单理解
-buffer 就是当前 Vim session 的文件历史记录。
+[Next Chapter](chapter03.md) will introduce the modification of the document.
+Before that, let's briefly introduce the buffer of Vim. Simply understand that
+the buffer is the file history of the current Vim session.
 
-> 现在你的 buffer 中应该已经有两个文件了，你可以用 `:buffers` 或 `:ls` 命令查看，看到
-> buffer 列表了吧，大概是这个样子的：
+> Now you should have two files in your buffer, you can use `:buffers` or `:ls`
+> command to view, see the buffer list, probably like this:
 
 ```
 :ls
@@ -69,12 +83,14 @@ buffer 就是当前 Vim session 的文件历史记录。
 Press ENTER or type command to continue
 ```
 
-> 接下来你可以尝试通过以下命令在文件缓存中进行跳转了
+> Then, you can use the following commands to switch between buffers:
 >
-> - `:bn` 打开缓存中下一个文件
-> - `:bp` 打开缓存中上一个文件
-> - `:b<N>` 打开缓存中第 N 个文件
+> - `:bn` open the next file in the buffer
+> - `:bp` open the previous file in the buffer
+> - `:b<N>` open the Nth file in the buffer
 >
-> 你也可以使用 `:bdelete<N>` 来删除所要关闭的缓冲区，缩写 `:bd<N>`。
-> 
-> 当然你也可以使用 `:Ex` 命令，选择 chapter03.md 并打开，进入[第三章](chapter03.md)。
+> Also you can use `:bdelete<N>` to delete the buffer you want to close, the
+> abbreviation is `:bd<N>`.
+>
+> Of course, you can also use the `:Ex` command, select `chapter03.md` and open
+> it, enter [Chapter 3](chapter03.md).

@@ -1,25 +1,29 @@
-# 光标的移动
+# Cursor Movement
 
-欢迎进入第一章，这一章将学习简单的光标移动操作。
+Welcome to Chapter 1, this chapter will learn simple cursor movement operations.
 
-如果你已经有了一定基础，这部分可以略过，直接 `G` 到文档尾部按照操作进入下一章。
+If you already have a certain foundation, this part can be skipped, directly `G`
+to the end of the document according to the operation into the next chapter.
 
-## 移动光标
+## Move the cursor
 
-### 单位级
-- `h` 向左一字符
-- `j` 下一行
-- `k` 上一行
-- `l` 向右一字符
+### Unit level
 
-### 单词级
-- `w` or `W` 向右移动到下一单词开头
-- `e` or `E` 向右移动到单词结尾
-- `b` or `B` 向左移动到单词开头
+- `h` left one character
+- `j` line down
+- `k` line up
+- `l` right one character
 
-_注意：所有小写单词都是以分词符作为单词界限，大写字母以空格作为界限_
+### Word level
 
-> 在下面字符块中感受一下各种移动吧！
+- `w` or `W` move right to the beginning of the word
+- `e` or `E` move right to the end of the word
+- `b` or `B` move left to the beginning of the word
+
+_Note: All lowercase words are word boundaries with word boundaries, uppercase
+letters with spaces as boundaries_
+
+> Try to feel the various movements in the following character blocks!
 
 ```
 This project's GitHub url is https://github.com/dofy/learn-vim
@@ -28,29 +32,35 @@ named chapter01.md via following command "vim chapter01.md"
 and welcome to https://yahaha.net :)
 ```
 
-### 块级
-- `gg` 到文档第一行
-- `G` 到文档最后一行
-- `0` 到行首（第 1 列）
-- `^` 到第一个非空白字符
-- `$` 到行尾
-- `H` 移动到屏幕顶端
-- `M` 移动到屏幕中间
-- `L` 移动到屏幕底部
-- `Ctrl-d` 向下移动半页
-- `Ctrl-u` 向上移动半页
-- `Ctrl-f` 向下移动一页
-- `Ctrl-b` 向上移动一页
-- `:<N>` or `<N>gg` 跳转到第 N 行
-- `:+<N>` or `<N>j` 向下跳 N 行
-- `:-<N>` or `<N>k` 向上跳 N 行
+### Block level
 
-_注意：所有命令前都可以加一个数字 N，表示对后面的命令执行 N 次，例如你想向下移动 3 行，除了
-可以用 `:+3` 之外，还可以用 `3j` 来实现同样的效果。另外，上面实际上有两种命令：一种是键入后
-立即执行的，比如 `gg`；还有一种是先输入 `:` 的（后面还会出现先按 `/` 的），这类命令需要在
-输入完成后按回车执行，后面的教程中也是一样。_
+- `gg` to the first line of the document
+- `G` to the last line of the document
+- `0` to the beginning of the line (column 1)
+- `^` to the first non-whitespace character
+- `$` to the end of the line
+- `H` move to the top of the screen
+- `M` move to the middle of the screen
+- `L` move to the bottom of the screen
+- `Ctrl-d` move down half a page
+- `Ctrl-u` move up half a page
+- `Ctrl-f` move down one page
+- `Ctrl-b` move up one page
+- `:<N>` or `<N>gg` jump to line N
+- `:+<N>` or `<N>j` jump down N lines
+- `:-<N>` or `<N>k` jump up N lines
 
-> 现在你可以在当前文件中畅游了，当你熟悉了各种移动操作后就可以通过 `G` 定位到当前文档到最后
-> 一行，按照提示进入下一章了。
+_Note: A number N can be added before all commands, which means that the command
+behind it is executed N times. For example, if you want to move down 3 lines,
+you can use `:+3` or `3j` to achieve the same effect. In addition, there are
+actually two commands above: one is executed immediately after typing, such as
+`gg`; the other is to enter `:` first (there will be a `/` first), this type of
+command needs to be executed after the input is completed. Press Enter, which is
+the same in the following tutorials._
+
+> Now you can swim in the current file. When you are familiar with various
+> movement operations, you can locate the current document to the last line by
+> pressing `G` and enter the next chapter according to the prompt.
 >
-> 将光标定位到后面文件名的任意位置上，直接敲键盘 `gf` 进入[第二章](chapter02.md)。
+> Place the cursor anywhere in the file name behind it and press the keyboard
+> `gf` to enter [Chapter 2](chapter02.md).

@@ -76,13 +76,14 @@ symbols such as the current line)_
 
 ### Basic operations
 
-1. [Cursor movement](chapter01.md)
+1. [Cursor Movement](chapter01.md)
 1. [Opening Files, Finding Content](chapter02.md)
-1. [Modify and save documents](chapter03.md)
-1. [Some tips](chapter04.md)
-1. [Split screen and tabs](chapter05.md)
-1. [Block operations](chapter06.md)
+1. [Modify and Save Documents](chapter03.md)
+1. [Some Tips](chapter04.md)
+1. [Split Screen and Tabs](chapter05.md)
+1. [Block Operations](chapter06.md)
 1. [Macros in Vim](chapter07.md)
+1. [Vim Modes](vim-modes.md)
 
 ### Additional content
 
