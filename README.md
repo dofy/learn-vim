@@ -6,14 +6,14 @@
 
 In my personal experience of learning Vim, it is very difficult to learn Vim by
 reading documentation or watching other people operate it. You have to be in the
-real world, in real scenarios, in order to familiarize yourself with the
-commands and master them.
+real world, in real scenarios, to familiarize yourself with the commands and
+master them.
 
-Therefore, in order to meet the needs of learning and operating at the same
-time, all the files in the project are in Markdown format, which can be read as
-an explanation document, and can also be opened in Vim. You can read it as an
-explanatory document, and you can also use Vim to open the files for actual
-operation (the latter is recommended).
+Therefore, to meet the needs of learning and operating at the same time, all the
+files in the project are in Markdown format, which can be read as an explanation
+document, and can also be opened in Vim. You can read it as an explanatory
+document, and you can also use Vim to open the files for actual operation (the
+latter is recommended).
 
 ## How to Use
 
@@ -26,7 +26,7 @@ git clone https://github.com/dofy/learn-vim.git
 2. go to the project folder
 
 ```bash
-cd learn-vim
+cd learn-vim/en
 ```
 
 3. open the file `chapter01.md` in Vim
@@ -43,7 +43,7 @@ vim chapter01.md
 
 ### Subtitles represent subcategories under this major category
 
-Text without any formatting is normal description for reading purposes only.
+Text without any formatting is a normal description for reading purposes only.
 
 > The text embedded in the quoted block is an instruction to operate, and you
 > can follow what is mentioned in it
@@ -76,13 +76,13 @@ symbols such as the current line)_
 
 ### Basic operations
 
-1. [Chapter 1: Cursor Movement](chapter01.md)
-1. [Chapter 2: Opening Files, Finding Content](chapter02.md)
-1. [Chapter 3: Modify and Save Documents](chapter03.md)
-1. [Chapter 4: Some Tips](chapter04.md)
-1. [Chapter 5: Split Screen and Tabs](chapter05.md)
-1. [Chapter 6: Block Operations](chapter06.md)
-1. [Chapter 7: Macros in Vim](chapter07.md)
+1. [Chapter 1: Cursor Movement](en/chapter01.md)
+1. [Chapter 2: Opening Files, Finding Content](en/chapter02.md)
+1. [Chapter 3: Modify and Save Documents](en/chapter03.md)
+1. [Chapter 4: Some Tips](en/chapter04.md)
+1. [Chapter 5: Split Screen and Tabs](en/chapter05.md)
+1. [Chapter 6: Block Operations](en/chapter06.md)
+1. [Chapter 7: Macros in Vim](en/chapter07.md)
 
 ### Additional content
 
@@ -116,7 +116,7 @@ symbols such as the current line)_
 
 - Run `vimtutor` on the console. This is the official hands-on tutorial for Vim.
 - [Concise Vim Practice Tips][coolshell] Great tutorial to get started!
-- [Vim Galore][vimgalore] Frequently updated, a must read for Vim.
+- [Vim Galore][vimgalore] Frequently updated, a must-read for Vim.
 - [Daily Vim][liuzhijun] 30 articles, the content is more complete!
 - [A book for learning the Vim editor][learnvim] Another Learn Vim (English)
 - [Open Vim][openvim] Interactive Vim Tutorials

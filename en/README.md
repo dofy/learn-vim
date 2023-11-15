@@ -6,14 +6,14 @@
 
 In my personal experience of learning Vim, it is very difficult to learn Vim by
 reading documentation or watching other people operate it. You have to be in the
-real world, in real scenarios, in order to familiarize yourself with the
-commands and master them.
+real world, in real scenarios, to familiarize yourself with the commands and
+master them.
 
-Therefore, in order to meet the needs of learning and operating at the same
-time, all the files in the project are in Markdown format, which can be read as
-an explanation document, and can also be opened in Vim. You can read it as an
-explanatory document, and you can also use Vim to open the files for actual
-operation (the latter is recommended).
+Therefore, to meet the needs of learning and operating at the same time, all the
+files in the project are in Markdown format, which can be read as an explanation
+document, and can also be opened in Vim. You can read it as an explanatory
+document, and you can also use Vim to open the files for actual operation (the
+latter is recommended).
 
 ## How to Use
 
@@ -43,7 +43,7 @@ vim chapter01.md
 
 ### Subtitles represent subcategories under this major category
 
-Text without any formatting is normal description for reading purposes only.
+Text without any formatting is a normal description for reading purposes only.
 
 > The text embedded in the quoted block is an instruction to operate, and you
 > can follow what is mentioned in it
@@ -61,8 +61,8 @@ symbols such as the current line)_
 > [!NOTE]
 >
 > If you already have your own `.vimrc` file (refer to
-> [Chapter 4](chapter04.md)) and have changed some of the defaults in it, it may
-> cause some operations to not match the tutorial. In this case, you can run
+> [Chapter 4](chapter04.md)) and have changed some of the defaults in it, it
+> may cause some operations to not match the tutorial. In this case, you can run
 > `Vim` with the following command:
 >
 > ```bash
@@ -86,8 +86,8 @@ symbols such as the current line)_
 
 ### Additional content
 
-1. [Vim Modes](en/vim-modes.md)
-1. [Vim plugins](en/plugin.md)
+1. [Vim Modes](vim-modes.md)
+1. [Vim plugins](plugin.md)
 1. [Plugin Recommendations](plugins/index.md)
    1. [NERDTree](plugins/nerdtree.md)
    1. [EasyAlign](plugins/easyalign.md)
@@ -116,7 +116,7 @@ symbols such as the current line)_
 
 - Run `vimtutor` on the console. This is the official hands-on tutorial for Vim.
 - [Concise Vim Practice Tips][coolshell] Great tutorial to get started!
-- [Vim Galore][vimgalore] Frequently updated, a must read for Vim.
+- [Vim Galore][vimgalore] Frequently updated, a must-read for Vim.
 - [Daily Vim][liuzhijun] 30 articles, the content is more complete!
 - [A book for learning the Vim editor][learnvim] Another Learn Vim (English)
 - [Open Vim][openvim] Interactive Vim Tutorials
