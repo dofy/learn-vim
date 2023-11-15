@@ -1,6 +1,6 @@
 # Vim Hands-On Tutorial（Learning Vim）
 
-[English](README.md) | [简体中文](../zh-CN/README.md)
+[English](en/README.md) | [简体中文](zh-CN/README.md)
 
 ## Intro
 
@@ -61,7 +61,7 @@ symbols such as the current line)_
 > [!NOTE]
 >
 > If you already have your own `.vimrc` file (refer to
-> [Chapter 4](file-four.md)) and have changed some of the defaults in it, it may
+> [Chapter 4](en/file-four.md)) and have changed some of the defaults in it, it may
 > cause some operations to not match the tutorial. In this case, you can run
 > `Vim` with the following command:
 >
@@ -76,22 +76,22 @@ symbols such as the current line)_
 
 ### Basic operations
 
-1. [Cursor movement](file-one.md)
-1. [Opening Files, Finding Content](file-two.md)
-1. [Modify and save documents](file-three.md)
-1. [Some tips](file-four.md)
-1. [Split screen and tabs](file-five.md)
-1. [Block operations](file-six.md)
-1. [Macros in Vim](file-seven.md)
+1. [Cursor movement](en/file-one.md)
+1. [Opening Files, Finding Content](en/file-two.md)
+1. [Modify and save documents](en/file-three.md)
+1. [Some tips](en/file-four.md)
+1. [Split screen and tabs](en/file-five.md)
+1. [Block operations](en/file-six.md)
+1. [Macros in Vim](en/file-seven.md)
 
 ### Additional content
 
-1. [Vim plugins](plugin.md)
-1. [Plugin Recommendations](plugins/index.md)
-   1. [NERDTree](plugins/nerdtree.md)
-   1. [EasyAlign](plugins/easyalign.md)
-   1. [Airline & Themes](plugins/airline.md)
-   1. [surround.vim](plugins/surround.md)
+1. [Vim plugins](en/plugin.md)
+1. [Plugin Recommendations](en/plugins/index.md)
+   1. [NERDTree](en/plugins/nerdtree.md)
+   1. [EasyAlign](en/plugins/easyalign.md)
+   1. [Airline & Themes](en/plugins/airline.md)
+   1. [surround.vim](en/plugins/surround.md)
 
 > [!NOTE]
 >
@@ -100,7 +100,7 @@ symbols such as the current line)_
 >   files
 > - You can always open the relevant chapter to view, and then use `:bp` to go
 >   back to the previous file (this command will (This command is covered in
->   [Chapter 2] (file-two.md)).
+>   [Chapter 2](en/file-two.md)).
 > - You may get a file not saved error when you exit the tutorial with `:q` or
 >   `:qa`, try adding `!` to the end of the command!
 

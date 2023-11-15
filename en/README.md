@@ -100,7 +100,7 @@ symbols such as the current line)_
 >   files
 > - You can always open the relevant chapter to view, and then use `:bp` to go
 >   back to the previous file (this command will (This command is covered in
->   [Chapter 2] (file-two.md)).
+>   [Chapter 2](file-two.md)).
 > - You may get a file not saved error when you exit the tutorial with `:q` or
 >   `:qa`, try adding `!` to the end of the command!
 
