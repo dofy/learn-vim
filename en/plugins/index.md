@@ -1,17 +1,17 @@
-# 插件推荐
+# Plugin Recommendations
 
 - [NERDTree](nerdtree.md)
 
-  NERDTree 是 Vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
+  NERDTree is a file browsing plugin in Vim that allows you to open/close directory trees and browse/open files with commands.
 
 - [EasyAlign](easyalign.md)
 
-  EasyAlign 是一款用来做字符对齐的插件，简直是强迫症患者的福音。
+  EasyAlign is a plugin to do character alignment, it's a boon for OCD people.
 
 - [Airline & Themes](airline.md)
 
-  Airline 可以在 Vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
+  Airline displays a more friendly status bar in Vim, and with a nice color scheme, it's a lot more fun to work with.
 
 - [surround.vim](surround.md)
 
-  成对 添加、替换、删除 `引号`、`括号` 以及`XML 标签`
+  Pairwise add, replace, delete `quotes`, `braces` and `XML tags`.

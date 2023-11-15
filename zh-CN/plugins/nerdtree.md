@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 _注意：Vim 插件管理器的使用请参考 [plugin.md](../plugin.md#插件管理)_
 
 > 运行 Vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
->
+
 ```
 1 Updated. Elapsed time: 6.008607 sec.
 2 [===]
@@ -32,12 +32,12 @@ _注意：Vim 插件管理器的使用请参考 [plugin.md](../plugin.md#插件�
 
 看到上面的提示说明插件安装成功，可以执行下面的命令来控制目录树了。
 
-| 命令 | 说明 |
-|---|---|
-| `:NERDTree` | 打开目录树 |
-| `:NERDTreeClose` | 关闭目录树 |
-| `:NERDTreeToggle` | 打开/关闭目录树 |
-| `:NERDTreeFind` | 打开目录树并定位到当前文件 |
+| 命令              | 说明                       |
+| ----------------- | -------------------------- |
+| `:NERDTree`       | 打开目录树                 |
+| `:NERDTreeClose`  | 关闭目录树                 |
+| `:NERDTreeToggle` | 打开/关闭目录树            |
+| `:NERDTreeFind`   | 打开目录树并定位到当前文件 |
 
 ## Tips
 

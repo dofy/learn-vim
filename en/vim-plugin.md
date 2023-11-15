@@ -1,69 +1,76 @@
-# Vim 插件
+# Vim Plugins
+
+Although Vim already provides very powerful features, but if you have a few good
+plug-ins to complement, more can make your work twice as fast.
 
 虽然 Vim 已经提供了非常强大的功能，但如果有几款好用的插件辅佐，更能让你的工作事
 半功倍。
 
-## 安装插件
+## Install Plugins
 
-若要手动安装 Vim 插件，需要完成如下步骤（不建议手动安装，请参考下面的[插件管理](#插件管理)内容）：
+If you want to install Vim plugins manually, you need to complete the following
+steps (it is not recommended to install manually, please refer to the
+[Plugin Management](#plugin-management) content below):
 
-1. 创建 `.vim` 文件夹
+1. Create the `.vim` folder
 
-  ```bash
-  cd ~
-  mkdir .vim
-  ```
+```bash
+cd ~
+mkdir .vim
+```
 
-2. 在 `.vim` 文件夹中创建 `bundle` 文件夹
+2. Create the `bundle` folder in the `.vim` folder
 
-  ```bash
-  cd .vim
-  mkdir bundle
-  ```
+```bash
+cd .vim
+mkdir bundle
+```
 
-3. copy 或 clone 插件文件
+3. copy or clone the plugin to the `bundle` folder
 
-  ```bash
-  cd bundle
-  git clone <repository-url>
-  ```
+```bash
+cd bundle
+git clone <repository-url>
+```
 
-  _注意：若插件没有 git 地址，也可以直接创建相关文件夹，并置一 `.vim` 文件于其中。_
+_Note: If the plugin does not have a git address, you can also create the
+relevant folder directly and place a `.vim` file in it._
 
-4. 修改 `runtimepath`
+4. Edit `runtimepath`
 
-  通过修改 `runtimepath` 属性，可以让 Vim 找到你要加载的插件，要查看 `runtimepath`
-  属性可用 `:set runtimepath` 命令
+By modifying the `runtimepath` property, you can let Vim find the plugin you
+want to load. To view the `runtimepath` property, you can use the
+`:set runtimepath` command
 
-  启用新插件可在 `.vimrc` 中添加如下配置
+You can enable new plugins by adding the following configuration to `.vimrc`
 
-  ```vim
-  set runtimepath^=~/.vim/bundle/<folder>/
-  " OR
-  set runtimepath^=~/.vim/bundle/<name>.vim
-  ```
+```vim
+set runtimepath^=~/.vim/bundle/<folder>/
+" OR
+set runtimepath^=~/.vim/bundle/<name>.vim
+```
 
+## Plugin Management
 
-## 插件管理
-
-当你的插件越来越多，就需要一个管理器来管理 Vim 插件了，市面上比较流行的插件管理
-器有以下几款：
+When you have more and more plugins, you need a manager to manage Vim plugins.
+There are several popular plugin managers:
 
 1. [vim-plug](https://github.com/junegunn/vim-plug)
 1. [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 
-我个人比较喜欢 vim-plug，下面就简单介绍一下这款管理器。
+I personally prefer vim-plug, and I will briefly introduce this manager below.
 
-## vim-plug 介绍
+## vim-plug Introduction
 
-### 项目地址
+### Project Address
 
 https://github.com/junegunn/vim-plug
 
-### 安装
+### Install
 
-[下载 plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
-文件，放入 `autoload` 文件夹中（一般该文件夹位于 `~/.vim/autoload/`）。
+[Download plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim),
+and put it in the `autoload` folder (usually this folder is located in
+`~/.vim/autoload/`).
 
 #### Unix
 
@@ -87,63 +94,68 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\autoload\plug.vim"))
 ```
 
-### 配置
+### Configuration
 
-添加 `vim-plug` 的配置到 `~/.vimrc` 中：
+Add the `vim-plug` configuration to `~/.vimrc`:
 
-1. 配置以 `call plug#begin()` 开始
-1. 插件列表，以 `Plug` 命令开头
-1. 用 `call plug#end()` 结束，以初始化插件系统
-  - 这将会自动开启 `filetype plugin indent on` 和 `syntax enable`，如果不希望这
-  样，你可以在该配置后重置你的设置，例如：`filetype indent off`, `syntax off`
+1. The configuration starts with `call plug#begin()`
+1. Plugin list, starting with the `Plug` command
+1. End with `call plug#end()` to initialize the plugin system
+
+- This will automatically enable `filetype plugin indent on` and
+  `syntax enable`. If you don't want this, you can reset your settings after
+  this configuration, for example: `filetype indent off`, `syntax off`
 
 #### Example
 
 ```vim
-" 指定插件保存位置
+" define the location to save plugins
 call plug#begin('~/.vim/bundle')
 
-" 注意要使用单引号
+" Note that single quotes should be used
 
-" 一些插件列表
+" Some plugin list
 
-" 如果插件在 GitHub 的地址是 https://github.com/junegunn/vim-easy-align
-" 可以缩写成下面这样
+" If the plugin's GitHub address is https://github.com/junegunn/vim-easy-align
+" Then you can write like this
 Plug 'junegunn/vim-easy-align'
 
-" 或者直接给定插件 git 地址
+" Or directly give the plugin git address
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
-" 多个 `Plug` 命令可以写在一行，用 `|` 符号分割
+" Use `|` to separate multiple `Plug` commands in one line
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
-" 更多配置详情查看官网介绍
+" More configuration details can be found on the official website
 
-" 初始化插件系统
+" Initialize the plugin system
 call plug#end()
 ```
 
-> 重启 Vim 或重载 `.vimrc` 文件并执行 `:PlugInstall` 安装配置好的插件
+> Restart Vim or reload `.vimrc` and execute `:PlugInstall` to install the
+> configured plugin
 >
-> 重载命令是 `:source ~/.vimrc`
+> The reload command is `:source ~/.vimrc`
 
-### 常用命令
+### Common Commands
 
-| 命令 | 说明 |
-|---|---|
-| `PlugInstall [name ...] [#threads]` | 安装插件 |
-| `PlugUpdate [name ...] [#threads]` | 安装或升级插件 |
-| `PlugClean` | 清理插件 |
-| `PlugUpgrade` | 升级 vim-plug |
-| `PlugStatus` | 查看已安装插件的状态 |
+| Command                             | Description          |
+| ----------------------------------- | -------------------- |
+| `PlugInstall [name ...] [#threads]` | Install plugin       |
+| `PlugUpdate [name ...] [#threads]`  | Install or upgrade   |
+| `PlugClean`                         | Clean plugin         |
+| `PlugUpgrade`                       | Upgrade vim-plug     |
+| `PlugStatus`                        | View installed state |
 
-_注意：更多命令查看官网介绍_
+_Note: For more commands, see the official website_
 
-## 去哪里找插件
+## Where to Find Plugins
 
-1. [GitHub](https://github.com) 上有很丰富的 Vim 插件资源，可以通过 `vim plug`
-关键字进行搜索[查看所有相关资源](https://github.com/search?utf8=%E2%9C%93&q=vim+plugin)
-1. [Vim Scripts](http://www.vim.org/scripts/) Vim 官方提供的脚本集合，注意里面除
-   了插件，还有很多 Vim 脚本
-1. [Vim Awesome](http://vimawesome.com/) Vim 插件推荐
-1. 本教程也将在 [插件推荐](plugins/index.md) 中不定期更新一些优秀插件以及使用说明
+1. There are a lot of Vim plugin resources on [GitHub](https://github.com), you
+   can search by `vim plug` keyword to
+   [view all related resources](https://github.com/search?utf8=%E2%9C%93&q=vim+plugin)
+1. [Vim Scripts](http://www.vim.org/scripts/) Vim official script collection,
+   pay attention to there are many Vim scripts in addition to plugins
+1. [Vim Awesome](http://vimawesome.com/) Vim plugin recommendation
+1. This tutorial will also update some excellent plugins and usage instructions
+   from time to time in [Plugin Recommendations](plugins/index.md)

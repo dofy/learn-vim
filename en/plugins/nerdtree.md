@@ -1,23 +1,26 @@
 # NERDTree
 
-NERDTree 是 Vim 中的文件浏览插件，可以通过命令打开/关闭目录树并浏览/打开文件。
+NERDTree is a file browsing plugin for Vim that allows you to open/close
+directory trees and browse/open files with commands.
 
-## 项目地址
+## Project address
 
 https://github.com/scrooloose/nerdtree
 
-## 安装
+## Installation
 
-> 修改 `.vimrc` 配置，在 `call plug#begin()` 后面添加如下配置
+> Modify the `.vimrc` configuration by adding the following configuration after
+> `call plug#begin()`.
 
-```vim
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-```
+`.vimrc` configuration, after `call plug#begin()` add the following
+configuration Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-_注意：Vim 插件管理器的使用请参考 [plugin.md](../plugin.md#插件管理)_
+_Note: For use of the Vim plugin manager, see [plugin.md](... /plugin.md#plugin
+management)_
 
-> 运行 Vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
->
+> Run Vim and execute the command `:PlugInstall`, you may get the following
+> prompt:
+
 ```
 1 Updated. Elapsed time: 6.008607 sec.
 2 [===]
@@ -28,36 +31,40 @@ _注意：Vim 插件管理器的使用请参考 [plugin.md](../plugin.md#插件�
 7 - nerdtree: Resolving deltas: 100% (158/158), done.
 ```
 
-## 使用
+## Using
 
-看到上面的提示说明插件安装成功，可以执行下面的命令来控制目录树了。
+If you see the above prompt, it means the plugin is installed successfully, you
+can execute the following commands to control the directory tree.
 
-| 命令 | 说明 |
-|---|---|
-| `:NERDTree` | 打开目录树 |
-| `:NERDTreeClose` | 关闭目录树 |
-| `:NERDTreeToggle` | 打开/关闭目录树 |
-| `:NERDTreeFind` | 打开目录树并定位到当前文件 |
+| Command           | Description                               |
+| ----------------- | ----------------------------------------- |
+| `:NERDTree`       | Open Directory Tree                       |
+| `:NERDTreeClose`  | Close the tree                            |
+| `:NERDTreeToggle` | open/close the catalog tree               |
+| `:NERDTreeFind`   | Open the tree and locate the current file |
 
 ## Tips
 
-### 绑定快捷键
+### Binding shortcuts
 
-在 `.vimrc` 中添加如下配置：
+Add the following configuration to `.vimrc`:
 
 ```vim
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
-" map 是快捷键映射命令
-" <C-n> 定义了快捷键，表示 Ctrl-n
-" 后面是对应的命令以及回车键 <CR>
+" map is the shortcut mapping command <C-n> defines the shortcut key, Ctrl-n.
+" followed by the corresponding command and the enter key <CR>.
 ```
 
-重载 `.vimrc` 文件后，就可以用 `<Ctrl-n>` 来打开或关闭目录树了。
+After reloading the `.vimrc` file, you can use `<Ctrl-n>` to open and close the
+directory tree.
 
-### 显示隐藏文件
+### Show hidden files
 
-NERDTree 插件默认是不显示隐藏文件的，有两种方式可以查看隐藏文件：
+The NERDTree plugin does not show hidden files by default. There are two ways to
+view hidden files:
 
-1. 打开目录树后按 `shift-i` 显示隐藏文件，再次按下，关闭显示隐藏文件
-2. 在 `.vimrc` 中添加设置 `let NERDTreeShowHidden=1` 可在打开时默认显示隐藏文件
+1. Press `shift-i` after opening the tree to show hidden files, press it again
+   to close the hidden files display.
+2. Add the setting `let NERDTreeShowHidden=1` to `.vimrc` to show hidden files
+   by default.

@@ -1,50 +1,50 @@
 # Airline & Themes
 
-Airline 可以在 Vim 中显示更友好的状态栏，再配以漂亮的配色，工作更开心。
+Airline displays a more user-friendly status bar in Vim, and with a nice color scheme, it's a lot more fun to work with.
 
-## 项目地址
+## Project address
 
 - Airline https://github.com/vim-airline/vim-airline
 - Airline Themes https://github.com/vim-airline/vim-airline-themes
 
-## 安装
+## Installation
 
-> 添加 `.vimrc` 配置
+> Add `.vimrc` configuration.
 
 ```vim
-" 同时安装两个插件
+" Install both plugins at the same time
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 ```
 
-> Vim 中执行 `:source ~/.vimrc` 重载配置文件
+> Execute `:source ~/.vimrc` in Vim to reload the config file.
 >
-> 执行 `:PlugInstall` 安装 Airline 和 Aairline Themes 插件
+> Execute `:PlugInstall` to install the Airline and Aairline Themes plugins.
 >
-> 在 `.vimrc` 中添加如下设置使 Airline 生效
+> Add the following setting to `.vimrc` to make Airline effective.
 
-```vim
-set laststatus=2    " 始终显示状态栏
+``vim
+set laststatus=2 " Always show status bar
 
 " Airline
-let g:airline#extensions#tabline#enabled=1    " 开启 tab 栏
+let g:airline#extensions#tabline#enabled=1 " enable tab bar
 ```
 
-> 重载配置文件使之生效，如果没有效果可以尝试重启 Vim
+> Reload the config file to make it work, if that doesn't work try restarting Vim
 
-现在你应该会看到 Vim 下方显示出了一条状态栏，显示信息一般会包含 **当前模式**，
-**当前文件**，**文件类型**，**文件编码**以及**当前行列信息**。
+You should now see a status bar displayed underneath Vim, displaying information that will typically contain **Current Mode**, **Current File**, **Current File**, **Current File**, **Current File**, and **Current File**.
+**Current File**, **File Type**, **File Encoding**, and **Current Column Information**.
 
-因为我们同时安装了 Airline Themes 插件，所以可以通过如下方式设置 Airline 的样式。
+Since we also have the Airline Themes plugin installed, we can set the Airline style as follows.
 
-> 执行 `:AirlineTheme simple` 应用 `simple` 样式，或者修改 `.vimrc` 文件，添加如
-> 下配置：
+> Execute `:AirlineTheme simple` to apply the `simple` style, or modify the `.vimrc` file to add a file like
+> The following configuration:
 
 ```vim
 let g:airline_theme='simple'
 ```
 
-Airline Themes 包含了非常多的样式，具体可以参考该项目的
-[样式文件夹](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes)
-其中所列的样式都可以应用。
+Airline Themes contains a large number of styles, which can be found in the project's
+[Styles folder](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes)
+The styles listed there can be applied.
 
-更多细节和效果图可以参考[项目地址](https://github.com/vim-airline/vim-airline)。
+For more details and renderings, please refer to the [project address](https://github.com/vim-airline/vim-airline).

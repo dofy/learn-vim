@@ -1,64 +1,77 @@
 # surround.vim
 
-成对 添加、替换、删除 `引号`、`括号` 以及`XML 标签`
+Add, replace, and delete `quotes`, `brackets`, and `XML tags` in pairs.
 
-## 项目地址
+## Project Address
 
 https://github.com/tpope/vim-surround
 
-## 安装
+## Installation
 
-> 添加 `.vimrc` 配置
+> Add the following configuration to your `.vimrc` file
 
 ```vim
 Plug 'tpope/vim-surround'
 ```
 
-## 使用（翻译自官方文档）
+## Usage (from official documentation)
 
-先从最简单的例子开始。 在下面字符串内进行如下操作 `cs"'` （注意要在 `NORMAL` 模式下进行）
+Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML
+tags, and more. The plugin provides mappings to easily delete, change and add
+such surroundings in pairs.
+
+It's easiest to explain with examples. Press `cs"'` inside
 
     "Hello world!"
 
-字符串将变成
+to change it to
 
     'Hello world!'
 
-再继续操作 `cs'<q>` 使其变成
+Now press `cs'<q>` to change it to
 
     <q>Hello world!</q>
 
-将成对标签替换为 `"` 进行如下操作 `cst"`，字符串将变成
+To go full circle, press `cst"` to get
 
     "Hello world!"
 
-`ds"` 将删除成对的 `"`
+To remove the delimiters entirely, press `ds"`.
 
     Hello world!
 
-现在把光标移动到 "Hello" 这个单词内, 键入 `ysiw]` （`iw` 是文本对象）
+Now with the cursor on "Hello", press `ysiw]` (`iw` is a text object).
 
     [Hello] world!
 
-接下来替换成大括号，并加上空格（使用 `}` 而不是 `{` 可以去掉空格）： `cs]{`
+Let's make that braces and add some space (use `}` instead of `{` for no space):
+`cs]{`
 
     { Hello } world!
 
-现在把整行放入小括号内，使用 `yssb` 或 `yss)`
+Now wrap the entire line in parentheses with `yssb` or `yss)`.
 
     ({ Hello } world!)
 
-恢复到原始的字符串： `ds{ds)`
+Revert to the original text: `ds{ds)`
 
     Hello world!
 
-将 Hello 嵌入斜体标签内： `ysiw<em>`
+Emphasize hello: `ysiw<em>`
 
     <em>Hello</em> world!
 
-最后，我们来试试 `VISUAL` 模式。 键入大写的 V （行 `VILUAL` 模式） 接下来是
-`S<p class="important">`
+Finally, let's try out visual mode. Press a capital V (for linewise visual mode)
+followed by `S<p class="important">`.
 
     <p class="important">
       <em>Hello</em> world!
     </p>
+
+This plugin is very powerful for HTML and XML editing, a niche which currently
+seems underfilled in Vim land. (As opposed to HTML/XML _inserting_, for which
+many plugins are available). Adding, changing, and removing pairs of tags
+simultaneously is a breeze.
+
+The `.` command will work with `ds`, `cs`, and `yss` if you install
+[repeat.vim](https://github.com/tpope/vim-repeat).

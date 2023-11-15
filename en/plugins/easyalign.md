@@ -1,23 +1,27 @@
 # EasyAlign
 
-EasyAlign 是一款用来做字符对齐的插件，简直是强迫症患者的福音。
+EasyAlign is a plugin for doing character alignment that is nothing short of
+OCD.
 
-## 项目地址
+## Project address
 
 https://github.com/junegunn/vim-easy-align
 
-## 安装
+## Installation
 
-> 修改 `.vimrc` 配置，在 `call plug#begin()` 后面添加如下配置
+> Modify `.vimrc` configuration, add the following configuration after
+> `call plug#begin()`
 
 ```vim
 Plug 'junegunn/vim-easy-align'
 ```
 
-_注意：Vim 插件管理器的使用请参考[plugin.md](../plugin.md#插件管理)_
+_Note: For use of the Vim plugin manager, see [plugin.md](../plugin.md#plugin
+management)_
 
-> 运行 Vim 并执行命令 `:PlugInstall`, 可能会得到如下提示：
->
+> Run Vim and execute the command `:PlugInstall`, you may get the following
+> prompt:
+
 ```
 1 Updated. Elapsed time: 6.008607 sec.
 2 [===]
@@ -28,18 +32,18 @@ _注意：Vim 插件管理器的使用请参考[plugin.md](../plugin.md#插件�
 7 - vim-easy-align: Resolving deltas: 100% (136/136), done.
 ```
 
-## 使用
+## Usage
 
-### 配置
+### Configuration
 
-> 添加 `.vimrc` 配置如下：
+> Add `.vimrc` configuration as follows:
 
 ```vim
 " EasyAlign
-xmap ga <Plug>(EasyAlign) " Visual 模式下快捷键
-nmap ga <Plug>(EasyAlign) " Normal 模式下快捷键
+xmap ga <Plug>(EasyAlign) " The shortcut key in visual mode
+nmap ga <Plug>(EasyAlign) " The shortcut key in normal mode
 
-" 配置一些自定义符号
+" Configure some custom symbols
 let g:easy_align_delimiters = {
 \ '>': { 'pattern': '>>\|=>\|>'  },
 \ '/': {
@@ -66,99 +70,114 @@ let g:easy_align_delimiters = {
 \ }
 ```
 
-### 实验
+### Experiment
 
-> 在下面的代码中尝试如下操作：
-
-```javascript
-let a=1;// one
-let  bcd=test=2; // two
-let      longword=others= 'some content';// string
-```
-
-> 首先定位光标到上面代码中的任意一句，按 `gaip<Space>`，应该会得到
-> 如下结果
+> Try the following operations in the code below:
 
 ```javascript
-let a=1;// one
-let bcd=test=2; // two
-let longword=others= 'some content';// string
+let a = 1; // one
+let bcd = (test = 2); // two
+let longword = (others = "some content"); // string
 ```
 
-> 保持光标不动，按 `gaip=`，应该会得到如下结果
+> First locate the cursor to any sentence in the above code, press
+> `gaip<Space>`, you should get the following results
 
 ```javascript
-let a        = 1;// one
-let bcd      = test=2; // two
-let longword = others= 'some content';// string
+let a = 1; // one
+let bcd = (test = 2); // two
+let longword = (others = "some content"); // string
 ```
 
-> 保持光标不动，按 `u`，再按 `gaip*=`，应该会得到如下结果
+> Keep the cursor still, press `gaip=`, you should get the following results
 
 ```javascript
-let a        = 1;// one
-let bcd      = test   = 2; // two
-let longword = others = 'some content';// string
+let a = 1; // one
+let bcd = (test = 2); // two
+let longword = (others = "some content"); // string
 ```
 
-下面解释一下按键的意思：
+> Keep the cursor still, press `u`, then press `gaip*=`, you should get the
+> following results
 
-- `gaip `
-  - `ga` 是开启 EasyAlign 的快捷键，我们在 `.vimrc` 配置文件中定义的
-  - `ip` 是定义操作区域，可以用任意选择操作命令完成，`ip` 是选择当前段落，如果光
-  标在代码第一行，则可以用 `2j` 代替 `ip`
-  - 此时命令区域会出现 `:EasyAlign (_)` 字样，表示等待匹配输入
-  - 按下 `<Space>` 是要将第一个空格前后对齐
+```javascript
+let a = 1; // one
+let bcd = (test = 2); // two
+let longword = (others = "some content"); // string
+```
+
+The meaning of the keys is explained below:
+
+- `gaip`
+  - `ga` is the shortcut to enable EasyAlign, which we defined in the `.vimrc`
+    configuration file.
+  - `ip` defines the action area, which can be done with any select action
+    command, `ip` selects the current paragraph, and if the cursor is on the
+    first line of code, `2j` can be used instead of `.vimrc`. If the cursor is
+    on the first line of code, you can use `2j` instead of `ip`.
+  - At this point, the word `:EasyAlign (_)` will appear in the command area,
+    indicating that it is waiting for matching input.
+  - Press `<Space>` to align the first space.
 - `gaip=`
-  - 意义同上，`=` 即将`<等号>`前后对齐
+  - Same as above, `=` is to align the `<equals sign>`.
 - `gaip*=`
-  - 为了看到更明显的效果，先用 `u` 撤销了前面的操作
-  - `=` 前面的  `*` 是一个描述符，可以是数字，代表第几个等号，也可以是负数，代表
-  倒数第几个，也可以是星号，代表所有。
+  - To see the effect, undo the previous operation with `u`.
+  - The `=` preceded by `*` is a descriptor that can be a number, representing
+    the first equals sign, or a negative number, representing the the
+    penultimate number, or an asterisk for all.
 
-> 如果确定修改好了上面提到的配置，你还可以尝试 `gaip/` 来对齐注释部分，执行后看
-> 上去会像下面这样
+> If you're sure you've changed the configuration as mentioned above, you can
+> also try `gaip/` to align the comment section, and when executed, look at It
+> will look like this
 
 ```javascript
-let a        = 1;                       // one
-let bcd      = test   = 2;              // two
-let longword = others = 'some content'; // string
+let a = 1; // one
+let bcd = (test = 2); // two
+let longword = (others = "some content"); // string
 ```
 
-### 匹配符说明
+### Explanation of Match Characters
 
-上面提到的 `<Space>` `=` 都是 EasyAlign 中定义好的特殊符号，用来表示某一类特征符
-，具体可以参考下表：
+The above mentioned `<Space>` `=` are special symbols defined in EasyAlign to
+indicate a certain type of character. These symbols are defined in EasyAlign to
+represent a certain type of character:
 
-| 按键 | 使用场景说明 |
+| Keystrokes | Scenario Description |
 | --- | --- |
-| `<Space>` | 匹配空白符  |
-| `=` | 包含等号的操作符（`=`, `==`, `!=`, `+=`, ...） |
-| `:` | 应用于 JSON 或 YAML 格式 |
-| `.` | 应用于多行点语法调用 |
-| `,` | 应用于多行参数列表 |
-| `&` | 对 [LaTeX table](https://en.wikibooks.org/wiki/LaTeX/Tables) 进行格式化，匹配 `&` 和 `\\` |
-| `#` | 应用于对 Ruby/Python 的注释的对齐 |
-| `<Bar>` | Markdown 表格 |
+| `<Space>` | Match whitespace |
+| `=` | Operators containing the equals sign (`=`, `==`, `! =`, `+=`, ...) |
+| `:` | Applies to JSON or YAML formats |
+| `.` | Apply to multi-line dot syntax calls |
+| `,` | Apply to multi-line parameter lists |
+| `&` | Format [LaTeX table](https://en.wikibooks.org/wiki/LaTeX/Tables) to match `&` and `\\\` |
+| `#` | Apply alignment to Ruby/Python comments |
+| `<Bar>` | Markdown tables |
 
-_注意：上表中提到的 `<Bar>` 键即 `|` 键_
+_Note: The `<Bar>` key mentioned in the table above is the `|` key_.
 
-> 尝试在上表中按 `gaip*|` 对 markdown 表格进行对齐
+> Try to align a markdown table by `gaip*|` in the above table.
 
 ## Tips
 
-### 对齐方式
+### Alignment method
 
-在等待输入匹配符，命令区出现 `:EasyAlign (_)` 字样时，可以按  `<Enter>` 键选择对
-齐方向，按一次切换为右对齐，显示 `:EasyAlign[R] (_)`，再按一次切换为居中对齐，显
-示为 `:EasyAlign[C] (_)`，再按切换回默认的左对齐，显示也恢复原样。
+When you are waiting for a match to be entered and `:EasyAlign (_)` appears in
+the command area, you can press the `<Enter>` key to select the alignment
+direction. Press once to switch to right alignment and display
+`:EasyAlign[R] (_)`, press again to switch to center alignment and display
+`:EasyAlign[R] (_)`, and press `<Enter>` to switch to center alignment and
+display `:EasyAlign[R] (_)`. toggle to center alignment and display
+`:EasyAlign[C] (_)`, then press again to switch back to the default left
+alignment, and the display returns to its original state.
 
-> 在上面的 markdown 表格中尝试一下 `gaip<Enter><Enter>*|`
+> Try `gaip<Enter><Enter>*|` in the markdown table above.
 
-### 正则匹配
+### Regular Matching
 
-在等待输入匹配符时，按快捷键 `<Ctrl-x>` 进入匹配模式，此时输入你需要的匹配特征正
-则即可匹配特殊组合。参考下面的文字：
+While waiting for a match to be typed, press the shortcut key `<Ctrl-x>` to
+enter match mode, and then type in the matching feature you want. The special
+combination can be matched by typing in the matching feature you need. See the
+following text:
 
 ```
 Lorem<-ipsum
@@ -169,8 +188,9 @@ eiusmod<-= tempor<=- incididunt
 ut <== labore
 ```
 
-> 尝试输入 `gaip*<Ctrl-x>`，此时进入正则匹配模式，继续输入 `<[-=~]*<Enter>` 会得
-> 到如下所示结果。
+> Try typing `gaip*<Ctrl-x>`, then it enters the regular matching mode, continue
+> typing `<[-=~]*<Enter>` and you will get the following result. The result is
+> shown below.
 
 ```
 Lorem    <- ipsum
@@ -181,6 +201,7 @@ eiusmod <-= tempor      <=- incididunt
 ut      <== labore
 ```
 
-### 更多参考
+### More references
 
-更多内容请参考[项目页](https://github.com/junegunn/vim-easy-align)的介绍
+For more references, please refer to the introduction of
+[project page](https://github.com/junegunn/vim-easy-align)
