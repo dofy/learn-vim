@@ -26,13 +26,13 @@ git clone https://github.com/dofy/learn-vim.git
 2. go to the project folder
 
 ```bash
-cd learn-vim
+cd learn-vim/en
 ```
 
-3. open the file `file-one.md` in Vim
+3. open the file `chapter01.md` in Vim
 
 ```bash
-vim file-one.md
+vim chapter01.md
 ```
 
 ## Formatting Rules
@@ -61,7 +61,7 @@ symbols such as the current line)_
 > [!NOTE]
 >
 > If you already have your own `.vimrc` file (refer to
-> [Chapter 4](file-four.md)) and have changed some of the defaults in it, it may
+> [Chapter 4](chapter04.md)) and have changed some of the defaults in it, it may
 > cause some operations to not match the tutorial. In this case, you can run
 > `Vim` with the following command:
 >
@@ -76,13 +76,13 @@ symbols such as the current line)_
 
 ### Basic operations
 
-1. [Cursor movement](file-one.md)
-1. [Opening Files, Finding Content](file-two.md)
-1. [Modify and save documents](file-three.md)
-1. [Some tips](file-four.md)
-1. [Split screen and tabs](file-five.md)
-1. [Block operations](file-six.md)
-1. [Macros in Vim](file-seven.md)
+1. [Cursor movement](chapter01.md)
+1. [Opening Files, Finding Content](chapter02.md)
+1. [Modify and save documents](chapter03.md)
+1. [Some tips](chapter04.md)
+1. [Split screen and tabs](chapter05.md)
+1. [Block operations](chapter06.md)
+1. [Macros in Vim](chapter07.md)
 
 ### Additional content
 
@@ -100,7 +100,7 @@ symbols such as the current line)_
 >   files
 > - You can always open the relevant chapter to view, and then use `:bp` to go
 >   back to the previous file (this command will (This command is covered in
->   [Chapter 2](file-two.md)).
+>   [Chapter 2](chapter02.md)).
 > - You may get a file not saved error when you exit the tutorial with `:q` or
 >   `:qa`, try adding `!` to the end of the command!
 

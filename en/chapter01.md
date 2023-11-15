@@ -24,7 +24,7 @@ _注意：所有小写单词都是以分词符作为单词界限，大写字母�
 ```
 This project's GitHub url is https://github.com/dofy/learn-vim
 Please clone it to your local folder and open the first file which is
-named file-one.md via following command "vim file-one.md"
+named chapter01.md via following command "vim chapter01.md"
 and welcome to https://yahaha.net :)
 ```
 
@@ -53,4 +53,4 @@ _注意：所有命令前都可以加一个数字 N，表示对后面的命令�
 > 现在你可以在当前文件中畅游了，当你熟悉了各种移动操作后就可以通过 `G` 定位到当前文档到最后
 > 一行，按照提示进入下一章了。
 >
-> 将光标定位到后面文件名的任意位置上，直接敲键盘 `gf` 进入[第二章](file-two.md)。
+> 将光标定位到后面文件名的任意位置上，直接敲键盘 `gf` 进入[第二章](chapter02.md)。

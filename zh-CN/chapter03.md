@@ -83,4 +83,4 @@ Change this line to UPPERCASE, THEN TO lowercase.
 - `:saveas <new filename>` 文件另存为
 - `:w <new filename>` 文件另存一份名为 `<new filename>` 的副本并继续编辑原文件
 
-> 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继续[下一章](file-four.md)的学习。
+> 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继续[下一章](chapter04.md)的学习。

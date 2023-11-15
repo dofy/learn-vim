@@ -56,7 +56,7 @@ const func = (win, doc) => {
 }
 ```
 
-[下一章](file-three.md)将介绍文档的修改，在这之前先简单介绍一下 Vim 的 buffer，简单理解
+[下一章](chapter03.md)将介绍文档的修改，在这之前先简单介绍一下 Vim 的 buffer，简单理解
 buffer 就是当前 Vim session 的文件历史记录。
 
 > 现在你的 buffer 中应该已经有两个文件了，你可以用 `:buffers` 或 `:ls` 命令查看，看到
@@ -64,8 +64,8 @@ buffer 就是当前 Vim session 的文件历史记录。
 
 ```
 :ls
-  1 #h   "file-one.md"                  line 47
-  2 %a   "file-two.md"                  line 1
+  1 #h   "chapter01.md"                  line 47
+  2 %a   "chapter02.md"                  line 1
 Press ENTER or type command to continue
 ```
 
@@ -77,4 +77,4 @@ Press ENTER or type command to continue
 >
 > 你也可以使用 `:bdelete<N>` 来删除所要关闭的缓冲区，缩写 `:bd<N>`。
 > 
-> 当然你也可以使用 `:Ex` 命令，选择 file-three.md 并打开，进入[第三章](file-three.md)。
+> 当然你也可以使用 `:Ex` 命令，选择 chapter03.md 并打开，进入[第三章](chapter03.md)。

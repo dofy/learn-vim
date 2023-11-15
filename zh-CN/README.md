@@ -21,13 +21,13 @@ git clone https://github.com/dofy/learn-vim.git
 2. 进入项目文件夹
 
 ```bash
-cd learn-vim
+cd learn-vim/zh-CN
 ```
 
-3. 用 Vim 打开文件 `file-one.md`
+3. 用 Vim 打开文件 `chapter01.md`
 
 ```bash
-vim file-one.md
+vim chapter01.md
 ```
 
 ## 排版规范
@@ -53,7 +53,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 > [!NOTE]
 >
-> 如果你已经有了自己的 `.vimrc` 文件 (参考 [第四章](file-four.md)) 并在其中修改
+> 如果你已经有了自己的 `.vimrc` 文件 (参考 [第四章](chapter04.md)) 并在其中修改
 > 了一些默认设置，那么可能导致某些操作与教程不符。如遇此情况，你可以用下面的命令
 > 来运行 `Vim`：
 >
@@ -68,13 +68,13 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ### 基础操作
 
-1. [光标的移动](file-one.md)
-1. [打开文件、查找内容](file-two.md)
-1. [文档的修改与保存](file-three.md)
-1. [一些小技巧](file-four.md)
-1. [分屏与标签页](file-five.md)
-1. [块操作](file-six.md)
-1. [Vim 中的宏](file-seven.md)
+1. [光标的移动](chapter01.md)
+1. [打开文件、查找内容](chapter02.md)
+1. [文档的修改与保存](chapter03.md)
+1. [一些小技巧](chapter04.md)
+1. [分屏与标签页](chapter05.md)
+1. [块操作](chapter06.md)
+1. [Vim 中的宏](chapter07.md)
 1. [Vim 的模式](file-modes.md)
 
 ### 附加内容
@@ -91,7 +91,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 > - 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打
 >   开相关文件
 > - 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会
->   在[第二章](file-two.md)中讲到）
+>   在[第二章](chapter02.md)中讲到）
 > - 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后
 >   面加上 `!`
 
