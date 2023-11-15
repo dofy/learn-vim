@@ -1,70 +1,83 @@
 # Chapter 5: Splitting Windows and Tabs
 
-## 窗口分屏
+## Splitting Windows and Tabs
 
-工作中经常会遇到这种情况，就是需要参照其他文档编辑当前文档（场景：翻译），或者从另外一个文档
-copy 代码到当前文档（场景：复制 html 元素类名到 css 文档），这时候就是你最需要分屏的时候。
+You will often encounter situations where you need to edit the current document
+with reference to another document (scenario: translation), or copy code from
+another document to the current document (scenario: copying html element class
+names to a css document). copy code from another document to the current
+document (scenario: copying html element class names to a css document), this is
+when you need to split the screen the most.
 
-### 分屏方式
+### Splitting
 
-- `:split` 缩写 `:sp` or `Ctrl-w s` 上下分屏
-- `:vsplit` 缩写 `:vs` or `Ctrl-w v` 左右分屏
-- `:diffsplit` 缩写 `:diffs` diff 模式打开一个分屏，后面可以加上 {filename}
+- `:split` abbreviation `:sp` or `Ctrl-w s` split up and down.
+- `:vsplit` Abbreviation `:vs` or `Ctrl-w v` Split left and right.
+- `:diffsplit` Abbreviation `:diffs` Diff mode opens a split screen and can be
+  followed by {filename}.
 
-### 窗口跳转
+### Window jumping
 
-- `Ctrl-w w` 激活下一个窗口
-- `Ctrl-w j` 激活下方窗口
-- `Ctrl-w k` 激活上方窗口
-- `Ctrl-w h` 激活左侧窗口
-- `Ctrl-w l` 激活右侧窗口
+- `Ctrl-w w` Activate next window.
+- `Ctrl-w j` Activates the next window.
+- `Ctrl-w k` Activate the upper window.
+- `Ctrl-w h` Activate left window
+- `Ctrl-w l` activates the right window
 
-### 移动分屏
+### Move split screen
 
-- `Ctrl-w L` 移动到最右侧
-- `Ctrl-w H` 移动到最左侧
-- `Ctrl-w K` 移动到顶部
-- `Ctrl-w J` 移动到底部
+- `Ctrl-w l` Moves to rightmost window
+- `Ctrl-w H` Moves to the leftmost side.
+- `Ctrl-w K` Move to the top
+- `Ctrl-w J` Move to the bottom
 
-_注意：区分大小写。另外，可以将底部的屏幕移动到右侧，实现上下分屏到左右分屏的转换。_
+_Note: Case sensitive. Alternatively, you can move the bottom screen to the
+right side for a top/bottom to left/right split screen conversion. _
 
-### 屏幕缩放
+### Screen zoom
 
-- `Ctrl-w =` 平均窗口尺寸
-- `Ctrl-w +` 增加高度
-- `Ctrl-w -` 缩减高度
-- `Ctrl-w _` 最大高度
-- `Ctrl-w >` 增加宽度
-- `Ctrl-w <` 缩减宽度
-- `Ctrl-w |` 最大宽度
+- `Ctrl-w =` Average window size
+- `Ctrl-w +` Increase height
+- `Ctrl-w -` Reduce height
+- `Ctrl-w _` Maximum height
+- `Ctrl-w >` Increase width
+- `Ctrl-w <` Reduce width
+- `Ctrl-w |` Maximum width
 
-> 实践！实践！实践！
+> Practice! Practice! Practice!
 
-## 标签页
+## Tagged pages
 
-[第二章](chapter02.md)中提到过的 buffer 和刚刚讲到的分屏操作都很适合在少量文件之间进行切换，
-文件超过 3 个我觉得就不方便了，而标签页则更适合多文件之间的切换。
+The buffer mentioned in [Chapter 2](chapter02.md) and the split-screen operation
+just mentioned are good for switching between a small number of files. I don't
+think it's convenient to have more than 3 files, but tabs are better for
+switching between multiple files.
 
-### 创建标签页
+### Create a tab
 
-- `:tabnew` or `:tabedit` 缩写 `:tabe` 打开新标签页
-- `Ctrl-w gf` 在新标签页中打开当前光标所在位置的文件名
+- `:tabnew` or `:tabedit` abbreviation `:tabe` opens a new tab.
+- `Ctrl-w gf` opens a new tab with the name of the file at the current cursor
+  position
 
-_注意：`:tabnew` 和 `:tabedit` 后面都可以跟一个 <空格><文件名> 用以在新标签页中
-打开指定文件，还可以在 `:` 后面加一个数字，指出新标签页在列表中的位置（从 0 开始）。_
+Note: Both `:tabnew` and `:tabedit` can be followed by a <space><filename> to
+open the specified file in a new tab. to open the specified file in a new tab,
+and `:` can be followed by a number indicating the position of the new tab in
+the list (starting from 0). \_
 
-### 切换标签页
+### Switch tabs
 
-- `gt` or `:tabnext` 缩写 `:tabn` 下一个标签页（最后一个会循环到第一个）
-- `gT` or `:tabprevious` 缩写 `:tabp` 上一个标签页（第一个会循环到最后一个）
-- `:tabrewind` 缩写 `:tabr` or `:tabfirst` 缩写 `:tabfir` 到第一个
-- `:tablast` 缩写 `:tabl` 到最后一个标签页
+- `gt` or `:tabnext` Abbreviation `:tabn` Next tab (last one loops to first)
+- `gT` or `:tabprevious` Abbreviation `:tabp` Previous tab (first one loops to
+  last)
+- `:tabrewind` abbreviation `:tabr` or `:tabfirst` abbreviation `:tabfir` to the
+  first one
+- `:tablast` abbreviation `:tabl` to the last tab
 
-### 关闭标签页
+### Close a tab.
 
-- `:tabclose` 缩写 `:tabc` 关闭当前标签页
-- `:-tabc` 关闭上一个标签页
-- `:+tabc` 关闭下一个标签页
-- `:tabonly` 缩写 `:tabo` 关闭其他标签页
+- `:tabclose` Abbreviation `:tabc` to close the current tab
+- `:-tabc` Close previous tab
+- `:+tabc` Close the next tab
+- `:tabonly` abbreviation `:tabo` close other tabs
 
-[下一章](chapter06.md)将介绍块操作。
+The [next chapter](chapter06.md) will cover block operations.

@@ -1,91 +1,99 @@
 # Chapter 3: Modifying and Saving Files
 
-## 修改文档
+## Modify the document
 
-你现在已经学会了控制光标、打开文件、切换文件、并在文件中查找内容，这些操作都是在
-Vim 的 normal 模式下进行的。现在，是时候进入 Vim 的另外一种模式 —— insert 模式，
-学习一下如何修改文件了。
+You have learned how to control the cursor, open files, switch files, and find
+content in files. These operations are all performed in Vim's normal mode. Now,
+it's time to enter another mode of Vim - insert mode, and learn how to modify
+the file.
 
-### 插入
+### Insert
 
-- `i` 当前字符前插入
-- `a` 当前字符后插入
-- `I` 行首插入
-- `A` 行尾插入
-- `o` 在下一行插入
-- `O` 在上一行插入
+- `i` insert before the current character
+- `a` insert after the current character
+- `I` insert at the beginning of the line
+- `A` insert at the end of the line
+- `o` insert in the next line
+- `O` insert in the previous line
 
-_注意：以上任何一个命令都会使 Vim 进入 insert 模式，进入该模式后光标会发生变化，
-这时输入的文字会直接出现在文档中，按 `Esc` 键或 `Ctrl-[` 或 `Ctrl-C` 退出 insert
-模式。_
+_Note: Any of the above commands will cause Vim to enter insert mode. After
+entering this mode, the cursor will change, and the text you enter will appear
+directly in the document. Press `Esc` or `Ctrl-[` or `Ctrl-C` to exit insert
+mode._
 
-### 删除（并保存到 Vim 剪贴板）
+### Delete (and save to Vim clipboard)
 
-- `s` 删除当前字符，并进入 `INSERT` 模式
-- `S` 删除当前行并保存到 Vim 剪贴板，同时进入 `INSERT` 模式（等同于 `cc`）
-- `x` 删除当前字符，相当于 insert 模式下的 `Delete`
-- `X` 删除前一个字符，相当于 insert 模式下的 `Backspace`
-- `dd` 删除当前行，并将删除的内容保存到 Vim 剪贴板
-- `d<X>` 删除指定内容并保存到 Vim 剪贴板
-- `cc` 删除当前行并保存到 Vim 剪贴板，同时进入 `INSERT` 模式
-- `c<X>` 删除指定内容并保存到 Vim 剪贴板，同时进入 `INSERT` 模式
+- `s` delete the current character and enter `INSERT` mode
+- `S` delete the current line and save it to the Vim clipboard, and enter
+  `INSERT` mode (equivalent to `cc`)
+- `x` delete the current character, equivalent to `Delete` in insert mode
+- `X` delete the previous character, equivalent to `Backspace` in insert mode
+- `dd` delete the current line and save it to the Vim clipboard
+- `d<X>` delete the specified content and save it to the Vim clipboard
+- `cc` delete the current line and save it to the Vim clipboard, and enter
+  `INSERT` mode
+- `c<X>` delete the specified content and save it to the Vim clipboard, and
+  enter
 
-_说明： `<X>` 部分是对操作内容的描述，如果要删除一个单词，就输入 `dw` 或者
-`de`，要复制当前位置到行尾的内容，就输入 `y$`，要删除后面 3 个字符并插入，就输入
-`c3l` 诸如此类。_
+_Note: The `<X>` part is a description of the operation content. If you want to
+delete a word, enter `dw` or `de`. If you want to copy the content from the
+current position to the end of the line, enter `y$`. If you want to delete the
+next 3 characters and insert them, enter `c3l`, and so on._
 
-### 复制
+### Copy
 
-- `yy` 复制当前行到 Vim 剪贴板
-- `y<X>` 复制指定内容到 Vim 剪贴板
+- `yy` copy the current line to the Vim clipboard
+- `y<X>` copy the specified content to the Vim clipboard
 
-### 粘贴
+### Paste
 
-- `p` 在当前位置后粘贴
-- `P` 在当前位置前粘贴
+- `p` paste after the current position
+- `P` paste before the current position
 
-### 合并
+### Merge
 
-- `J` 将当前行与下一行合并
+- `J` merge the current line with the next line
 
-> 尝试在下面的文本中进行复制粘贴练习
+> Try copying and pasting in the text below
 
 ```
-删除这一行
-粘贴到这一行下面
-剪切 ABC 并把它粘贴到 XYZ 前面，使这部分内容看起来像
-剪切 并把它粘贴到 ABC XYZ 前面。
+Delete this line
+Paste below this line
+Cut ABC and paste it in front of XYZ to make this part look like
+Cut and paste it in front of ABC XYZ.
 ```
 
-### 替换
+### Replace
 
-- `r<X>` 将当前字符替换为 X
-- `gu<X>` 将指定的文本转换为小写
-- `gU<X>` 将指定的文本转换为大写
-- `:%s/<search>/<replace>/` 查找 search 内容并替换为 replace 内容
+- `r<X>` replace the current character with X
+- `gu<X>` convert the specified text to lowercase
+- `gU<X>` convert the specified text to uppercase
+- `:%s/<search>/<replace>/` find the search content and replace it with the
+  replace content
 
-> 尝试修改下列文本的大小写
+> Try changing the case of the following text
 
 ```
 Change this line to UPPERCASE, THEN TO lowercase.
 ```
 
-> 还有个更好玩的命令 `g~<X>`，先将光标定位到上面那行文本，执行 `0g~$` 看看发生了
-> 什么。
+> There is a more interesting command `g~<X>`, first locate the cursor to the
+> line of text above, execute `0g~$` to see what happened.
 
-### 撤销、重做
+### Undo, Redo
 
-- `u` 撤销
-- `Ctrl-r` 重做
+- `u` undo
+- `Ctrl-r` redo
 
-### 保存文件
+### Save file
 
-- `:w` 保存当前文件
-- `:wa` 保存全部文件
-- `:wq` or `ZZ` 保存并退出
-- `:q!` or `ZQ` 强制退出，不保存
-- `:saveas <new filename>` 文件另存为
-- `:w <new filename>` 文件另存一份名为 `<new filename>` 的副本并继续编辑原文件
+- `:w` save the current file
+- `:wa` save all files
+- `:wq` or `ZZ` save and exit
+- `:q!` or `ZQ` force exit without saving
+- `:saveas <new filename>` save the file as `<new filename>`
+- `:w <new filename>` save a copy of the file as `<new filename>` and continue
+  editing the original file
 
-> 你可以试着把当前（也许已经改得面目全非的）文件另存一份，然后继
-> 续[下一章](chapter04.md)的学习。
+> You can try to save the current (perhaps already changed beyond recognition)
+> file as a copy, and then continue learning the [next chapter](chapter04.md).

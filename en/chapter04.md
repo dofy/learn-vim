@@ -1,100 +1,119 @@
 # Chapter 4: Some Tips
 
-## 简单设置 Vim
+## Simple setup of Vim
 
-“工欲善其事，必先利其器”。尽管 Vim 非常强大，但默认配置的 Vim 看起来还是比较朴素的，为了适合
-我们的开发需求，要对 Vim 进行一些简单的配置。
+"Work well, must first sharpen his tools." Although Vim is very powerful, the
+default configuration of Vim looks relatively simple. In order to meet our
+development needs, we need to do some simple configuration to Vim.
 
-- `:set number` 显示行号
-- `:set relativenumber` 显示相对行号（这个非常重要，慢慢体会）
-- `:set hlsearch` 搜索结果高亮
-- `:set autoindent` 自动缩进
-- `:set smartindent` 智能缩进
-- `:set tabstop=4` 设置 tab 制表符所占宽度为 4
-- `:set softtabstop=4` 设置按 `tab` 时缩进的宽度为 4
-- `:set shiftwidth=4` 设置自动缩进宽度为 4
-- `:set expandtab` 缩进时将 tab 制表符转换为空格
-- `:filetype on` 开启文件类型检测
-- `:syntax on` 开启语法高亮
+- `:set number` display line number
+- `:set relativenumber` display relative line number (this is very important,
+  slowly experience)
+- `:set hlsearch` search result highlight
+- `:set autoindent` automatic indentation
+- `:set smartindent` smart indentation
+- `:set tabstop=4` set tab tab width to 4
+- `:set softtabstop=4` set the width of the indentation when pressing `tab` to 4
+- `:set shiftwidth=4` set the automatic indentation width to 4
+- `:set expandtab` indent tab to space
+- `:filetype on` open file type detection
+- `:syntax on` open syntax highlighting
 
-这里列出的是命令，你可以通过在 Vim 中输入进行设置，但这种方式设置的参数只在本次关闭 Vim 前生效，
-如果你退出 Vim 再打开，之前的设置就失效了。
+Here are the commands that you can use to set up Vim, but the parameters set in
+this way only take effect before closing Vim this time. If you exit Vim and open
+it again, the previous settings will be invalid.
 
-若要永久生效，需要修改 Vim 的一个自动配置文件，一般文件路径是 `/home/<user>/.vimrc`（Linux
-系统）或 `/Users/<user>/.vimrc`（Mac OS 系统）
+If you want to take effect permanently, you need to modify an automatic
+configuration file of Vim. The general file path is `/home/<user>/.vimrc` (Linux
+system) or `/Users/<user>/.vimrc` (Mac OS system)
 
-如果没有就新建一个，以 Mac OS 系统为例：
+If not, create a new one. Take Mac OS system as an example:
 
-> 在控制台执行如下命令，每行结尾记得回车
+> Execute the following command in the console, remember to press Enter at the
+> end of each line
 
 ```bash
 cd ~
 vim .vimrc
 ```
 
-> 现在你已经在 Vim 中打开了你的 Vim 专属配置文件，将上面提到的配置复制到你的文件中，记得要删除
-> 每行开头的 `:`
+> Now you have opened your Vim exclusive configuration file in Vim, copy the
+> configuration mentioned above to your file, remember to delete the `:` at the
+> beginning of each line
 >
-> 修改完成执行 `:wq` 或者 `ZZ` 保存退出，再次进入 Vim 时，你的这些配置就已经生效了
+> After the modification is completed, execute `:wq` or `ZZ` to save and exit.
+> When you enter Vim again, your configuration should take effect
 >
-> 当然，机智如我也为你准备好了一份 [vimrc](vimrc.vim) 样本文件，你可以在控制台执行
-> `cp vimrc.vim ~/.vimrc` 直接使用，再次启动 Vim 或在 Vim 中执行  `:source ~/.vimrc`你的配置就
-> 应该生效了。
+> Of course, I have prepared a sample file [vimrc](vimrc.vim) for you. You can
+> use it directly by executing `cp vimrc.vim ~/.vimrc`, and start Vim again or
+> execute `:source ~/.vimrc` in Vim. Your configuration should take effect.
 
-_**[ AD ]** 当然你也可以在我维护的另外一个项目 [The 7th Vim](https://github.com/dofy/7th-vim) 中找到一个更为完整的配置方案。_
+_**[AD]** Of course, you can also find a more complete configuration scheme in
+another project maintained by me
+[The 7th Vim](https://github.com/dofy/7th-vim)._
 
-## 清除搜索高亮
+### Clear search highlight
 
-前面提到的配置中，有一项是高亮全部搜索结果 `:set hlsearch`，其作用是当你执行 `/`
-、`?`、`*` 或 `#` 搜索后高亮所有匹配结果。
+In the configuration mentioned above, there is an option to highlight all search
+results `:set hlsearch`, its function is when you execute `/`, `?`, `*` or `#`
+search and highlight all matching results.
 
-> 如果你已经设置了这个选项，尝试执行 `/set`
+> If you have set this option, try executing `/set`
 
-看到效果了吧，搜索结果一目了然，但这有时候也是一种困扰，因为知道搜索结果后高亮就没用了，但高亮
-本人并不这样认为，它会一直高亮下去，直到你用 `:set nohlsearch` 将其关闭。
+See the effect, the search results are clear at a glance, but this is sometimes
+a kind of trouble, because the highlight does not think so, it will always
+highlight, until you use `:set nohlsearch` to turn it off.
 
-但这样需要就打开，不需要就关闭也不是个办法，有没有更好的解决方案呢？当然！请看下面的终极答案：
+But this requires you to turn it on when you need it, and turn it off when you
+don't need it. Is there a better solution? of course! See the ultimate answer
+below:
 
-> **再搜一个不存在的字符串**
+> **Search for a string that does not exist**
 
-通常我用来清除搜索高亮的命令是 `/lfw`，一是因为 `lfw` 这个组合一般不会出现（不适用于
-本文档...），二是这三个字母的组合按起来比较舒服，手指基本不需要怎么移动（你感受一下）。
+Usually I use the command `/lfw` to clear the search highlight. One is because
+the combination of `lfw` is generally not available (not applicable to this
+document...), and the other is that the combination of these three letters is
+more comfortable to press, and the fingers basically do not need to move (you
+feel it).
 
-## 重复上一次命令
+## Repeat the last command
 
-Vim 有一个特殊的命令 `.`，你可以用它重复执行上一个命令。
+Vim has a special command `.`, you can use it to repeat the last command.
 
-> 按下面的说明进行操作
+> Follow the instructions below to operate
 
 ```
-按 dd 删除本行
-按 . 重复删除操作
-2. 再删除两行
-这行也没了
-p 把刚才删掉的粘回来
-3. 又多出 6 行
+Press dd to delete this line
+Press . to repeat the delete operation
+Press 2. to delete two more lines
+This line is gone
+Press p to paste it back
+Press 3. to add 6 more lines
 ```
 
-## 缩进
+## Indentation
 
-- `>>` 向右缩进当前行
-- `<<` 向左缩进当前行
+- `>>` indent the current line to the right
+- `<<` indent the current line to the left
 
-> 在这一行上依次按 `3>>`，`<<` 和 `<G` 看看效果
+> On this line, press `3>>`, `<<` and `<G` in turn to see the effect
 >
-> 打酱油行
+> Go to the soy sauce line
 
-## 自动排版
+## Automatic typesetting
 
-- `==` 自动排版当前行
-- `gg=G` 当前文档全文自动排版
-- `<N>==` 对从当前行开始的 N 行进行自动排版
-- `=<N>j` 对当前行以及向下 N 行进行自动排版
-- `=<N>k` 对当前行以及向上 N 行进行自动排版
+- `==` automatic typesetting of the current line
+- `gg=G` automatic typesetting of the current document
+- `<N>==` automatic typesetting for N lines starting from the current line
+- `=<N>j` automatic typesetting for the current line and N lines below
+- `=<N>k` automatic typesetting for the current line and N lines above
 
-> 另外，还可以利用[第二章](chapter02.md)中提到的匹配搜索对代码块进行批量排版，尝试用
-> `gf` 命令打开 [chapter04-demo.js](chapter04-demo.js) 按照里面的说明进行操作
+> In addition, you can also use the matching search mentioned in
+> [Chapter 2](chapter02.md) to batch typeset the code block. Try using the `gf`
+> command to open [chapter04-demo.js](chapter04-demo.js) according to the
+> instructions in it.
 
-如果智能缩进设置生效了，执行后会看到如[第二章](chapter02.md)中一样的排版效果。
+If the smart indentation setting takes effect, you will see the same typesetting
+effect as in [Chapter 2](chapter02.md).
 
-[下一章](chapter05.md)将介绍分屏和标签页。
+The [next Chapter](chapter05.md) will introduce split screen and tab page.
