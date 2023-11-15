@@ -1,4 +1,4 @@
-# 分屏与标签页
+# Chapter 5: Splitting Windows and Tabs
 
 ## 窗口分屏
 

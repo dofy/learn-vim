@@ -61,8 +61,8 @@ symbols such as the current line)_
 > [!NOTE]
 >
 > If you already have your own `.vimrc` file (refer to
-> [Chapter 4](en/chapter04.md)) and have changed some of the defaults in it, it may
-> cause some operations to not match the tutorial. In this case, you can run
+> [Chapter 4](en/chapter04.md)) and have changed some of the defaults in it, it
+> may cause some operations to not match the tutorial. In this case, you can run
 > `Vim` with the following command:
 >
 > ```bash
@@ -76,17 +76,17 @@ symbols such as the current line)_
 
 ### Basic operations
 
-1. [Cursor movement](en/chapter01.md)
-1. [Opening Files, Finding Content](en/chapter02.md)
-1. [Modify and save documents](en/chapter03.md)
-1. [Some tips](en/chapter04.md)
-1. [Split screen and tabs](en/chapter05.md)
-1. [Block operations](en/chapter06.md)
-1. [Macros in Vim](en/chapter07.md)
-1. [Vim Modes](en/vim-modes.md)
+1. [Chapter 1: Cursor Movement](chapter01.md)
+1. [Chapter 2: Opening Files, Finding Content](chapter02.md)
+1. [Chapter 3: Modify and Save Documents](chapter03.md)
+1. [Chapter 4: Some Tips](chapter04.md)
+1. [Chapter 5: Split Screen and Tabs](chapter05.md)
+1. [Chapter 6: Block Operations](chapter06.md)
+1. [Chapter 7: Macros in Vim](chapter07.md)
 
 ### Additional content
 
+1. [Vim Modes](en/vim-modes.md)
 1. [Vim plugins](en/plugin.md)
 1. [Plugin Recommendations](en/plugins/index.md)
    1. [NERDTree](en/plugins/nerdtree.md)

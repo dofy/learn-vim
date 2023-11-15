@@ -1,4 +1,4 @@
-# 一些小技巧
+# Chapter 4: Some Tips
 
 ## 简单设置 Vim
 

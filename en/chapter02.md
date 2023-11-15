@@ -1,4 +1,4 @@
-# Opening Files, Finding Content
+# Chapter 2: Opening Files, Finding Content
 
 ## Open Files
 
@@ -76,7 +76,7 @@ the buffer is the file history of the current Vim session.
 > Now you should have two files in your buffer, you can use `:buffers` or `:ls`
 > command to view, see the buffer list, probably like this:
 
-```
+```vim
 :ls
   1 #h   "chapter01.md"                  line 47
   2 %a   "chapter02.md"                  line 1

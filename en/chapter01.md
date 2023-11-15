@@ -1,4 +1,4 @@
-# Cursor Movement
+# Chapter 1: Cursor Movement
 
 Welcome to Chapter 1, this chapter will learn simple cursor movement operations.
 

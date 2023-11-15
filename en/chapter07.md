@@ -1,42 +1,55 @@
-# Vim 中的宏
+# Chapter 7: Vim Macros
 
-宏操作在 Vim 中（甚至任何编辑器中）属于比较复杂的操作了，如果前面的内容都已经掌握了，那么你
-已经可以算是一个 Vim 高手了，所以，这位高手，我们不妨再来进阶一下吧。
+Macros are a more advanced topic in Vim (and any other editor). If you've
+mastered the previous chapters, you're already a Vim master. So, let's take it
+to the next level.
 
-还记得[上一章](chapter06.md)中把文本转成数组的例子吧，我们还做同样的事，不过这次是用宏来操作。
+Do you remember the example of converting text to an array in the
+[previous chapter](chapter06.md)? We'll do the same thing, but this time with
+macros.
 
-> `12gg` 跳转到准备开始处理的起始行，按指示进行操作，先看效果后解释。
+> `16gg` Jump to the start line where you're ready to start processing, follow
+> the instructions, see the effect first and then explain.
 
 ```javascript
 var myArray = [
-按 qa 开启宏录制，前方高能，连续按 I<单引号><Esc>A<单引号><逗号><Esc>jq7@a
-我也要
-我也要
-我也要
-我也要
-我也要
-我也要
-我也要
+Press qa to start recording the macro, and then press I<single quote><Esc>A<single quote><comma><Esc>jq7@a
+Me too
+Me too
+Me too
+Me too
+Me too
+Me too
+Me too
 ];
 ```
 
-OMG! 发生了什么，有没有惊出一身冷汗，之前两次块操作的结果瞬间就完成了，最后再简单做些收尾工作，
-去掉最后一行的逗号，集体缩进一下，搞定！
+OMG! What happened, did you get a cold sweat? The results of the previous two
+block operations were completed in an instant, and finally a little finishing
+work, remove the comma at the end of the last line, indent the collective, done!
 
-下面来解释一下刚才的操作：
+Next, let's explain the operation just now:
 
-- `q` 是开启录制宏，`a` 是给这次宏的录制过程一个存储位置，可以是 0-9 或 a-z；
-- 然后 `I<单引号><Esc>A<单引号><逗号><Esc>j` 是你这次录制的整个宏的操作过程，意思就是行首
-插入单引号，行尾插入单引号和逗号，跳到下一行；
-- 接下来的 `q` 是结束本次宏的录制；
-- `@` 是唤起宏，`a` 是要唤起的宏的名字（存储位置），前面的 `7` 你应该明白吧，就是执行 7 次。
+- `q` is to start recording the macro, `a` is to give the macro recording
+  process a storage location, which can be 0-9 or a-z;
+- Then `I<single quote><Esc>A<single quote><comma><Esc>j` is the operation
+  process of the entire macro you recorded this time, which means inserting a
+  single quote at the beginning of the line, inserting a single quote and a
+  comma at the end of the line, and jumping to the next line;
+- Pressing `q` next ends this macro recording;
+- `@` is to call up the macro, `a` is the name (storage location) of the macro
+  to be called up, and the `7` in front of it should be clear, that is, to
+  execute 7 times.
 
-_Tips：`@@` 再次唤起最后一次执行的宏。_
+_Tips: `@@` calls up the last macro executed again._
 
 ---
 
-日常工作中频繁用到的和不怎么用得上的在这七章中应该都已经涉及到了，如果 Vim 中遇到了什么问题，
-或者教程中遗漏了什么常规操作，欢迎在 [issues](../../issues) 中提出来，我会尽我所能给予回答
-或完善到教程中。
+All the frequently used and not so frequently used in these seven chapters
+should have been covered. If you encounter any problems in Vim, or if you miss
+any regular operations in the tutorial, please feel free to raise them in
+[issues](../../issues), and I will do my best to answer them or improve them in
+the tutorial.
 
-**再次感谢您的关注！如果爱，请分享。爱极客公园，爱 VIM！**
+**Thanks again for your interest! If you love, please share. Love life, love
+VIM!**
