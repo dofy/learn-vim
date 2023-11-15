@@ -1,98 +1,124 @@
-# Vim 实操教程（Learning Vim）
+# Vim Hands-On Tutorial（Learning Vim）
 
-[English](README.md) | [中文](../README.md)
+[English](README.md) | [简体中文](../zh-CN/README.md)
 
-以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，你必须在实际
-应用中，进入真实场景才能逐渐熟悉并掌握相关命令。
+## Intro
 
-因此，为了同时满足学习和操作的需求，项目中的文件都采用了 Markdown 格式，既可以当作说明文档来
-阅读，也可以用 Vim 打开文件进行实际操作（建议采用后者）。
+In my personal experience of learning Vim, it is very difficult to learn Vim by
+reading documentation or watching other people operate it. You have to be in the
+real world, in real scenarios, in order to familiarize yourself with the
+commands and master them.
 
-## 如何使用
+Therefore, in order to meet the needs of learning and operating at the same
+time, all the files in the project are in Markdown format, which can be read as
+an explanation document, and can also be opened in Vim. You can read it as an
+explanatory document, and you can also use Vim to open the files for actual
+operation (the latter is recommended).
 
-1. 进入控制台
-2. clone 项目到本地
-  ```
-  git clone https://github.com/dofy/learn-vim.git
-  ```
-3. 进入项目文件夹
-  ```
-  cd learn-vim
-  ```
-4. 用 Vim 打开文件 `file-one.md`
-  ```
-  vim file-one.md
-  ```
+## How to Use
 
-## 排版规范
+1. clone project to local
 
-```Markdown
-## 大标题表示一大类
-
-### 小标题表示该大类下的小分类
-
-没有任何格式的文本为正常描述，只有阅读功能。
-
-> 嵌入到引用块中的文本为操作指示，你可以按照里面提到的内容进行操作
->
-> 同时操作符或命令会包含在类似 `:w` 的符号中
-
-命令中形如 f<X> 中的 < 和 > 不需要打出来，<X> 代表一个变量，即你可以打 fa 或 fb 亦或 fC
-
-_注意：命令区分大小写（需要注意的事项会出现在当前行这样的符号中）_
+```bash
+git clone https://github.com/dofy/learn-vim.git
 ```
 
-## 导航
+2. go to the project folder
 
-### 基础操作
+```bash
+cd learn-vim
+```
 
-1. [光标的移动](file-one.md)
-1. [打开文件、查找内容](file-two.md)
-1. [文档的修改与保存](file-three.md)
-1. [一些小技巧](file-four.md)
-1. [分屏与标签页](file-five.md)
-1. [块操作](file-six.md)
-1. [Vim 中的宏](file-seven.md)
+3. open the file `file-one.md` in Vim
 
-### 附加内容
+```bash
+vim file-one.md
+```
 
-1. [Vim 插件](plugin.md)
-1. [插件推荐](plugins/index.md)
-    1. [NERDTree](plugins/nerdtree.md)
-    1. [EasyAlign](plugins/easyalign.md)
-    1. [Airline & Themes](plugins/airline.md)
-    1. [surround.vim](plugins/surround.md)
+## Formatting Rules
 
-## Tips
+```Markdown
 
-- 教程中会有下一章或相关章节的导航，定位到文件名执行 `gf`（goto file）就可以打开相关文件
-- 你可以随时打开相关章节查看，然后用 `:bp` 回到之前的文件（该命令会在[第二章](file-two.md)中讲到）
-- 当你用 `:q` 或 `:qa` 退出教程时可能会收到文件未保存的错误提醒，试试在命令后面加上 `!`
+## Major titles represent a large category
 
-## TODO
+### Subtitles represent subcategories under this major category
 
-- [ ] vimdiff
-- [ ] more settings
-- [ ] other mode
-- [ ] text object
-- [x] [plugins](plugin.md)
+Text without any formatting is normal description for reading purposes only.
 
-## 推荐几个 Vim 配置方案
+> The text embedded in the quoted block is an instruction to operate, and you
+> can follow what is mentioned in it
+>
+> Also operators or commands are included in symbols like `:w`.
 
-  - [dofy / **7th-vim**][7th-vim]
-  - [kepbod / **ivim**][kepbod]
-  - [chxuan / **vimplus**][chxuan]
-  - [SpaceVim / **SpaceVim**][spacevim]
+The < and > in commands such as f<X> do not need to be typed, <X> represents a
+variable, i.e. you can type fa or fb or fC
 
-## 推荐另外几个出色的 Vim 教程
+_Note: Commands are case-sensitive (matters requiring attention appear in
+symbols such as the current line)_
 
-- 控制台运行 `vimtutor` 这是 Vim 官方实操教程
-- [简明 Vim 练级攻略][coolshell] 很不错的入门教程
-- [Vim Galore][vimgalore] 更新频繁，Vim 进阶必读
-- [每日一Vim][liuzhijun] 共 30 篇，内容比较全
-- [Vim 教程网][vimjc] 一个女生维护的 Vim 中文教程网站，持续更新中
-- [A book for learning the Vim editor][learnvim] 另一个 Learn Vim （英语）
-- [Open Vim][openvim] 交互式 Vim 教程
+```
+
+> [!NOTE]
+>
+> If you already have your own `.vimrc` file (refer to
+> [Chapter 4](file-four.md)) and have changed some of the defaults in it, it may
+> cause some operations to not match the tutorial. In this case, you can run
+> `Vim` with the following command:
+>
+> ```bash
+> # Do not load the configuration file
+> vim -u NONE
+> # Load a specific configuration file
+> vim -u <filename>
+> ```
+
+## Index
+
+### Basic operations
+
+1. [Cursor movement](file-one.md)
+1. [Opening Files, Finding Content](file-two.md)
+1. [Modify and save documents](file-three.md)
+1. [Some tips](file-four.md)
+1. [Split screen and tabs](file-five.md)
+1. [Block operations](file-six.md)
+1. [Macros in Vim](file-seven.md)
+
+### Additional content
+
+1. [Vim plugins](plugin.md)
+1. [Plugin Recommendations](plugins/index.md)
+   1. [NERDTree](plugins/nerdtree.md)
+   1. [EasyAlign](plugins/easyalign.md)
+   1. [Airline & Themes](plugins/airline.md)
+   1. [surround.vim](plugins/surround.md)
+
+> [!NOTE]
+>
+> - In the tutorials, you can navigate to the next chapter or related chapters,
+>   and locate the file name to open it by executing `gf` (goto file). Related
+>   files
+> - You can always open the relevant chapter to view, and then use `:bp` to go
+>   back to the previous file (this command will (This command is covered in
+>   [Chapter 2](file-two.md)).
+> - You may get a file not saved error when you exit the tutorial with `:q` or
+>   `:qa`, try adding `!` to the end of the command!
+
+## Recommend a few Vim configurations
+
+- [dofy / **7th-vim**][7th-vim]
+- [kepbod / **ivim**][kepbod]
+- [chxuan / **vimplus**][chxuan]
+- [SpaceVim / **SpaceVim**][spacevim]
+
+## Recommends a couple of other excellent Vim tutorials
+
+- Run `vimtutor` on the console. This is the official hands-on tutorial for Vim.
+- [Concise Vim Practice Tips][coolshell] Great tutorial to get started!
+- [Vim Galore][vimgalore] Frequently updated, a must read for Vim.
+- [Daily Vim][liuzhijun] 30 articles, the content is more complete!
+- [A book for learning the Vim editor][learnvim] Another Learn Vim (English)
+- [Open Vim][openvim] Interactive Vim Tutorials
 - [QuickRef.ME/vim][quickref] Vim cheatsheet
 
 ## Cheatsheets
@@ -107,7 +133,8 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 > [![005][cheatsheets5]][cheatsheets5]
 
-**再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
+**Thanks again for your interest! If you love, please share. Love life, love
+VIM!**
 
 [7th-vim]: https://github.com/dofy/7th-vim
 [kepbod]: https://github.com/kepbod/ivim
@@ -116,7 +143,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [coolshell]: http://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
-[vimjc]: https://vimjc.com
 [learnvim]: https://github.com/iggredible/Learn-Vim
 [openvim]: https://openvim.com/
 [quickref]: https://quickref.me/vim
@@ -124,4 +150,5 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 [cheatsheets2]: https://vimsheet.com/
 [cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 [cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
-[cheatsheets5]: http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+[cheatsheets5]:
+  http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
