@@ -75,35 +75,35 @@ let g:easy_align_delimiters = {
 > Try the following operations in the code below:
 
 ```javascript
-let a = 1; // one
-let bcd = (test = 2); // two
-let longword = (others = "some content"); // string
+let a=1;// one
+let  bcd=test=2; // two
+let      longword=others= 'some content';// string
 ```
 
 > First locate the cursor to any sentence in the above code, press
 > `gaip<Space>`, you should get the following results
 
 ```javascript
-let a = 1; // one
-let bcd = (test = 2); // two
-let longword = (others = "some content"); // string
+let a=1;// one
+let bcd=test=2; // two
+let longword=others= 'some content';// string
 ```
 
 > Keep the cursor still, press `gaip=`, you should get the following results
 
 ```javascript
-let a = 1; // one
-let bcd = (test = 2); // two
-let longword = (others = "some content"); // string
+let a        = 1;// one
+let bcd      = test=2; // two
+let longword = others= 'some content';// string
 ```
 
 > Keep the cursor still, press `u`, then press `gaip*=`, you should get the
 > following results
 
 ```javascript
-let a = 1; // one
-let bcd = (test = 2); // two
-let longword = (others = "some content"); // string
+let a        = 1;// one
+let bcd      = test   = 2; // two
+let longword = others = 'some content';// string
 ```
 
 The meaning of the keys is explained below:
@@ -131,9 +131,9 @@ The meaning of the keys is explained below:
 > will look like this
 
 ```javascript
-let a = 1; // one
-let bcd = (test = 2); // two
-let longword = (others = "some content"); // string
+let a        = 1;                       // one
+let bcd      = test   = 2;              // two
+let longword = others = 'some content'; // string
 ```
 
 ### Explanation of Match Characters
