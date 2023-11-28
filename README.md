@@ -134,6 +134,10 @@ symbols such as the current line)_
 
 > [![005][cheatsheets5]][cheatsheets5]
 
+## Star History
+
+[![Star History Chart][star-history-chart]][star-history]
+
 **Thanks again for your interest! If you love, please share. Love life, love
 VIM!**
 
@@ -149,7 +153,10 @@ VIM!**
 [quickref]: https://quickref.me/vim
 [cheatsheets1]: https://vim.rtorr.com/lang/zh_tw
 [cheatsheets2]: https://vimsheet.com/
-[cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+[cheatsheets3]: https://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 [cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 [cheatsheets5]:
-  http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+  https://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+[star-history]: https://star-history.com/#dofy/learn-vim&Date
+[star-history-chart]:
+  https://api.star-history.com/svg?repos=dofy/learn-vim&type=Date
