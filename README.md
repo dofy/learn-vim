@@ -1,4 +1,4 @@
-# Vim Hands-On Tutorial（Learning Vim）
+# Vim Hands-On Tutorial（Learning Vi and Vims）
 
 [English](en/README.md) | [简体中文](zh-CN/README.md)
 
