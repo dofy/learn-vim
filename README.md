@@ -1,6 +1,11 @@
-# Vim Hands-On Tutorial（Learning Vi and Vims）
+# Vim Hands-On Tutorial (Learning Vi and Vims)
 
-[English](en/README.md) | [简体中文](zh-CN/README.md)
+![GitHub Repo stars](https://img.shields.io/github/stars/dofy/learn-vim)
+![GitHub](https://img.shields.io/github/license/dofy/learn-vim)
+![GitHub contributors](https://img.shields.io/github/contributors/dofy/learn-vim)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/dofy/learn-vim)
+
+[🇺🇸 English](en/README.md) | [🇨🇳 简体中文](zh-CN/README.md)
 
 ## Intro
 
