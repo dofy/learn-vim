@@ -1,10 +1,7 @@
 # Vim Plugins
 
-Although Vim already provides very powerful features, but if you have a few good
-plug-ins to complement, more can make your work twice as fast.
-
-虽然 Vim 已经提供了非常强大的功能，但如果有几款好用的插件辅佐，更能让你的工作事
-半功倍。
+Although Vim already provides very powerful features, a few good plugins can
+make your work even more efficient.
 
 ## Install Plugins
 

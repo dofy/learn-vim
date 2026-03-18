@@ -20,8 +20,8 @@ to the end of the document according to the operation into the next chapter.
 - `e` or `E` move right to the end of the word
 - `b` or `B` move left to the beginning of the word
 
-_Note: All lowercase words are word boundaries with word boundaries, uppercase
-letters with spaces as boundaries_
+_Note: Lowercase letters treat word characters as boundaries, uppercase letters
+treat spaces as boundaries_
 
 > Try to feel the various movements in the following character blocks!
 

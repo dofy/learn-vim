@@ -9,7 +9,7 @@ time we do this:
 - Then add `'` at the beginning of the line, `',` at the end of the line, and
   repeat until the last line (imagine 50 lines of text).
 
-> With Vim, you don't have to do this, just press `014gg` and follow the
+> With Vim, you don't have to do this, just press `17gg` and follow the
 > instructions for the selected line.
 
 ```javascript
@@ -24,21 +24,19 @@ Look at the line number later and jump! Now press A to insert, then enter <singl
 ];
 ```
 
-> Now that you've completed the first step, you still need to make up the
-> previous `'`, press `17gg` to go back to that line and do it again, but but
-> this time there are three things to change:
+> Now that you've completed the first step, you still need to add the leading
+> `'`, press `17gg` to go back to that line and do it again, but this time
+> there are three things to change:
 >
-> 1.
-> 1. press `0` when you press `$` on the first line, because this time you want
->    to insert at the beginning of the line. > 1. press `0` at the end of the
->    line;
-> 1. when pressing `A` at the end of the line, press `I` instead, because in
->    block operations `A` is inserted after the character, and `I` is inserted
->    before the character;
+> 1. press `0` instead of `$` on the first line, because this time you want
+>    to insert at the beginning of the line;
+> 1. when pressing `A` at the end of the last line, press `I` instead, because
+>    in block operations `A` inserts after the character and `I` inserts before
+>    the character;
 > 1. press `<single quote><Esc>` at the end.
 >
 > Finally, to finish up, `22gg$x` deletes `,` at the end of the last line, and
-> then `17gg7==` indents the code > a bit. indent the code a bit.
+> then `17gg7==` indents the code a bit.
 >
 > Done!
 

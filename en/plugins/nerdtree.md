@@ -12,11 +12,13 @@ https://github.com/scrooloose/nerdtree
 > Modify the `.vimrc` configuration by adding the following configuration after
 > `call plug#begin()`.
 
-`.vimrc` configuration, after `call plug#begin()` add the following
-configuration Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Add the following to `.vimrc` after `call plug#begin()`:
 
-_Note: For use of the Vim plugin manager, see [plugin.md](... /plugin.md#plugin
-management)_
+```vim
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+```
+
+_Note: For use of the Vim plugin manager, see [vim-plugin.md](../vim-plugin.md#plugin-management)_
 
 > Run Vim and execute the command `:PlugInstall`, you may get the following
 > prompt:

@@ -17,7 +17,7 @@ review them.
 
 ## Insert Mode
 
-INsert mode is one of the most commonly used modes in Vim, and its function is
+Insert mode is one of the most commonly used modes in Vim, and its function is
 to insert content into the text. Press `i` in Normal mode to enter Insert mode,
 and press `Esc` to exit Insert mode.
 

@@ -18,11 +18,11 @@ Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
 > Execute `:source ~/.vimrc` in Vim to reload the config file.
 >
-> Execute `:PlugInstall` to install the Airline and Aairline Themes plugins.
+> Execute `:PlugInstall` to install the Airline and Airline Themes plugins.
 >
 > Add the following setting to `.vimrc` to make Airline effective.
 
-``vim
+```vim
 set laststatus=2 " Always show status bar
 
 " Airline
@@ -31,8 +31,9 @@ let g:airline#extensions#tabline#enabled=1 " enable tab bar
 
 > Reload the config file to make it work, if that doesn't work try restarting Vim
 
-You should now see a status bar displayed underneath Vim, displaying information that will typically contain **Current Mode**, **Current File**, **Current File**, **Current File**, **Current File**, and **Current File**.
-**Current File**, **File Type**, **File Encoding**, and **Current Column Information**.
+You should now see a status bar displayed underneath Vim, displaying information
+that typically includes **Current Mode**, **Current File**, **File Type**,
+**File Encoding**, and **Current Column**.
 
 Since we also have the Airline Themes plugin installed, we can set the Airline style as follows.
 
