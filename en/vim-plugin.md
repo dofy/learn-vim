@@ -151,8 +151,8 @@ _Note: For more commands, see the official website_
 1. There are a lot of Vim plugin resources on [GitHub](https://github.com), you
    can search by `vim plug` keyword to
    [view all related resources](https://github.com/search?utf8=%E2%9C%93&q=vim+plugin)
-1. [Vim Scripts](http://www.vim.org/scripts/) Vim official script collection,
-   pay attention to there are many Vim scripts in addition to plugins
-1. [Vim Awesome](http://vimawesome.com/) Vim plugin recommendation
+1. [Vim Scripts](https://www.vim.org/scripts/) Vim official script collection,
+   note that in addition to plugins, there are many Vim scripts inside
+1. [Vim Awesome](https://vimawesome.com/) Vim plugin recommendation
 1. This tutorial will also update some excellent plugins and usage instructions
    from time to time in [Plugin Recommendations](plugins/index.md)

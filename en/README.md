@@ -87,7 +87,7 @@ symbols such as the current line)_
 ### Additional content
 
 1. [Vim Modes](vim-modes.md)
-1. [Vim plugins](plugin.md)
+1. [Vim plugins](vim-plugin.md)
 1. [Plugin Recommendations](plugins/index.md)
    1. [NERDTree](plugins/nerdtree.md)
    1. [EasyAlign](plugins/easyalign.md)
@@ -141,7 +141,7 @@ VIM!**
 [kepbod]: https://github.com/kepbod/ivim
 [chxuan]: https://github.com/chxuan/vimplus
 [spacevim]: https://github.com/SpaceVim/SpaceVim
-[coolshell]: http://coolshell.cn/articles/5426.html
+[coolshell]: https://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
 [learnvim]: https://github.com/iggredible/Learn-Vim
@@ -149,7 +149,7 @@ VIM!**
 [quickref]: https://quickref.me/vim
 [cheatsheets1]: https://vim.rtorr.com/lang/zh_tw
 [cheatsheets2]: https://vimsheet.com/
-[cheatsheets3]: http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
+[cheatsheets3]: https://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 [cheatsheets4]: https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
 [cheatsheets5]:
-  http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
+  https://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png

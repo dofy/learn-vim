@@ -143,7 +143,7 @@ _注意：更多命令查看官网介绍_
 
 1. [GitHub](https://github.com) 上有很丰富的 Vim 插件资源，可以通过 `vim plug`
 关键字进行搜索[查看所有相关资源](https://github.com/search?utf8=%E2%9C%93&q=vim+plugin)
-1. [Vim Scripts](http://www.vim.org/scripts/) Vim 官方提供的脚本集合，注意里面除
+1. [Vim Scripts](https://www.vim.org/scripts/) Vim 官方提供的脚本集合，注意里面除
    了插件，还有很多 Vim 脚本
-1. [Vim Awesome](http://vimawesome.com/) Vim 插件推荐
+1. [Vim Awesome](https://vimawesome.com/) Vim 插件推荐
 1. 本教程也将在 [插件推荐](plugins/index.md) 中不定期更新一些优秀插件以及使用说明

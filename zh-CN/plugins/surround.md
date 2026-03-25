@@ -56,7 +56,7 @@ Plug 'tpope/vim-surround'
 
     <em>Hello</em> world!
 
-最后，我们来试试 `VISUAL` 模式。 键入大写的 V （行 `VILUAL` 模式） 接下来是
+最后，我们来试试 `VISUAL` 模式。 键入大写的 V （行 `VISUAL` 模式） 接下来是
 `S<p class="important">`
 
     <p class="important">

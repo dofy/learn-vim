@@ -16,8 +16,7 @@ https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 ```
 
-_Note: For use of the Vim plugin manager, see [plugin.md](../plugin.md#plugin
-management)_
+_Note: For use of the Vim plugin manager, see [vim-plugin.md](../vim-plugin.md#plugin-management)_
 
 > Run Vim and execute the command `:PlugInstall`, you may get the following
 > prompt:

@@ -5,7 +5,7 @@ directory trees and browse/open files with commands.
 
 ## Project address
 
-https://github.com/scrooloose/nerdtree
+https://github.com/preservim/nerdtree
 
 ## Installation
 
@@ -15,7 +15,7 @@ https://github.com/scrooloose/nerdtree
 Add the following to `.vimrc` after `call plug#begin()`:
 
 ```vim
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 ```
 
 _Note: For use of the Vim plugin manager, see [vim-plugin.md](../vim-plugin.md#plugin-management)_
