@@ -92,7 +92,7 @@ symbols such as the current line)_
 ### Additional content
 
 1. [Vim Modes](en/vim-modes.md)
-1. [Vim plugins](en/plugin.md)
+1. [Vim plugins](en/vim-plugin.md)
 1. [Plugin Recommendations](en/plugins/index.md)
    1. [NERDTree](en/plugins/nerdtree.md)
    1. [EasyAlign](en/plugins/easyalign.md)
@@ -150,7 +150,7 @@ VIM!**
 [kepbod]: https://github.com/kepbod/ivim
 [chxuan]: https://github.com/chxuan/vimplus
 [spacevim]: https://github.com/SpaceVim/SpaceVim
-[coolshell]: http://coolshell.cn/articles/5426.html
+[coolshell]: https://coolshell.cn/articles/5426.html
 [vimgalore]: https://github.com/mhinz/vim-galore
 [liuzhijun]: http://liuzhijun.iteye.com/category/270228
 [learnvim]: https://github.com/iggredible/Learn-Vim
