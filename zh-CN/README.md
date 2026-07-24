@@ -97,6 +97,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ## 推荐几个 Vim 配置方案
 
+- [dofy / **nvim**][nvim]（作者当前使用的 Neovim 配置）
 - [dofy / **7th-vim**][7th-vim]
 - [kepbod / **ivim**][kepbod]
 - [chxuan / **vimplus**][chxuan]
@@ -126,6 +127,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 **再次感谢您的关注！如果爱，请分享。爱生活，爱 VIM！**
 
+[nvim]: https://github.com/dofy/nvim
 [7th-vim]: https://github.com/dofy/7th-vim
 [kepbod]: https://github.com/kepbod/ivim
 [chxuan]: https://github.com/chxuan/vimplus

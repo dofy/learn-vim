@@ -107,6 +107,7 @@ symbols such as the current line)_
 
 ## Recommend a few Vim configurations
 
+- [dofy / **nvim**][nvim] (the author's current Neovim setup)
 - [dofy / **7th-vim**][7th-vim]
 - [kepbod / **ivim**][kepbod]
 - [chxuan / **vimplus**][chxuan]
@@ -137,6 +138,7 @@ symbols such as the current line)_
 **Thanks again for your interest! If you love, please share. Love life, love
 VIM!**
 
+[nvim]: https://github.com/dofy/nvim
 [7th-vim]: https://github.com/dofy/7th-vim
 [kepbod]: https://github.com/kepbod/ivim
 [chxuan]: https://github.com/chxuan/vimplus
