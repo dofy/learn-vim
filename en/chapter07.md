@@ -45,11 +45,10 @@ _Tips: `@@` calls up the last macro executed again._
 
 ---
 
-All the frequently used and not so frequently used in these seven chapters
-should have been covered. If you encounter any problems in Vim, or if you miss
-any regular operations in the tutorial, please feel free to raise them in
-[issues](../../issues), and I will do my best to answer them or improve them in
-the tutorial.
+That wraps up the basics of Vim. But to truly make Vim flow effortlessly, there
+are a few more "inner skills" worth learning: text objects for precisely
+selecting an edit range, registers for mastering copy and paste, marks and jumps
+for leaving a trail through your code, and cross-file batch operations. We'll
+tackle each of them in the next few chapters.
 
-**Thanks again for your interest! If you love, please share. Love life, love
-VIM!**
+[Next Chapter](chapter08.md) introduces text objects.

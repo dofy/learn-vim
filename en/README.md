@@ -83,6 +83,10 @@ symbols such as the current line)_
 1. [Chapter 5: Split Screen and Tabs](chapter05.md)
 1. [Chapter 6: Block Operations](chapter06.md)
 1. [Chapter 7: Macros in Vim](chapter07.md)
+1. [Chapter 8: Text Objects](chapter08.md)
+1. [Chapter 9: Registers and Clipboard](chapter09.md)
+1. [Chapter 10: Marks and Jumps](chapter10.md)
+1. [Chapter 11: Multi-file Search and Replace](chapter11.md)
 
 ### Additional content
 
