@@ -19,8 +19,8 @@ certain file, the following introduces two other commonly used open methods.
 
 - `*` find the word under the cursor and jump to the next
 - `#` find the word under the cursor and jump to the previous
-- `/<search>` find the specified string backward
-- `?<search>` find the specified string forward
+- `/<search>` find the specified string forward
+- `?<search>` find the specified string backward
 - `n` continue to find the next
 - `N` continue to find the previous
 
