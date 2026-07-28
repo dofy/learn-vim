@@ -5,7 +5,8 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/dofy/learn-vim)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/dofy/learn-vim)
 
-[🇺🇸 English](en/README.md) | [🇨🇳 简体中文](zh-CN/README.md)
+[🇺🇸 English](en/README.md) | [🇨🇳 简体中文](zh-CN/README.md) |
+[🇯🇵 日本語](ja/README.md)
 
 ## Intro
 
