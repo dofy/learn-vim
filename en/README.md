@@ -1,6 +1,7 @@
 # Vim Hands-On Tutorial（Learning Vim）
 
-[English](README.md) | [简体中文](../zh-CN/README.md)
+[English](README.md) | [简体中文](../zh-CN/README.md) |
+[日本語](../ja/README.md)
 
 ## Intro
 

@@ -1,6 +1,7 @@
 # Vim 实操教程（Learning Vim）
 
-[English](../en/README.md) | [简体中文](README.md)
+[English](../en/README.md) | [简体中文](README.md) |
+[日本語](../ja/README.md)
 
 ## 引言
 
