@@ -1,0 +1,15 @@
+{
+  "name": "learn-vim",
+  "version": "1.0.0",
+  "description": "A hands-on, multilingual Vim tutorial you read and practice in Vim.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
