@@ -11,7 +11,7 @@ This is a bilingual Vim hands-on tutorial repository. All content is in Markdown
 ```
 learn-vim/
 ├── zh-CN/          # Simplified Chinese tutorial
-│   ├── chapter01–07.md
+│   ├── chapter01–11.md
 │   ├── vim-modes.md
 │   ├── vim-plugin.md
 │   ├── vimrc.vim   # Sample .vimrc configuration
