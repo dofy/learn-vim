@@ -104,7 +104,6 @@ export default defineConfig({
     'README.md',
     'CLAUDE.md',
     'LICENSE',
-    'docs/**',
     '**/vimrc.vim',
     '**/*-demo.js',
   ],
