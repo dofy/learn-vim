@@ -1,5 +1,9 @@
 # Vim Hands-On Tutorial (Learning Vi and Vims)
 
+<p align="center">
+  <img src="assets/learn-vim-logo.svg" alt="learn vim" width="520">
+</p>
+
 ![GitHub Repo stars](https://img.shields.io/github/stars/dofy/learn-vim)
 ![GitHub](https://img.shields.io/github/license/dofy/learn-vim)
 ![GitHub contributors](https://img.shields.io/github/contributors/dofy/learn-vim)
