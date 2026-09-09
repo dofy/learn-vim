@@ -16,5 +16,5 @@
     <path d="M104 46l-10-16M151 45l4-20" fill="none" stroke="#f4c95d" stroke-width="11" stroke-linecap="round"/>
   </g>
 
-  <text x="310" y="177" fill="#17324d" font-family="Verdana, sans-serif" font-size="112" font-weight="700" letter-spacing="-4">learn vim</text>
+  <text x="310" y="177" fill="#5b8fba" font-family="Verdana, sans-serif" font-size="112" font-weight="700" letter-spacing="-4">learn vim</text>
 </svg>
