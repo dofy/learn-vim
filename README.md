@@ -12,6 +12,14 @@
 [🇺🇸 English](en/README.md) | [🇨🇳 简体中文](zh-CN/README.md) |
 [🇯🇵 日本語](ja/README.md)
 
+> [!TIP]
+>
+> Prefer learning in the browser? Try the interactive companion with lessons
+> and a Vim-style practice editor side by side:
+> [learning-vim.phpz.org](https://learning-vim.phpz.org/).
+> The web project is open source at
+> [dofy/learning-vim](https://github.com/dofy/learning-vim).
+
 ## Intro
 
 In my personal experience of learning Vim, it is very difficult to learn Vim by

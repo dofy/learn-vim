@@ -3,6 +3,13 @@
 [English](../en/README.md) | [简体中文](README.md) |
 [日本語](../ja/README.md)
 
+> [!TIP]
+>
+> 更喜欢直接在浏览器中边学边练？可以使用带有课程正文和 Vim 风格练习编辑器的交互版：
+> [learning-vim.phpz.org](https://learning-vim.phpz.org/)。
+> Web 项目代码开源在
+> [dofy/learning-vim](https://github.com/dofy/learning-vim)。
+
 ## 引言
 
 以我个人学习 Vim 的经验来看，通过看文档或看其他人操作其实是很难真正学会 Vim 的，

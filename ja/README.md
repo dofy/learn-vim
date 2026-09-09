@@ -3,6 +3,14 @@
 [English](../en/README.md) | [简体中文](../zh-CN/README.md) |
 [日本語](README.md)
 
+> [!TIP]
+>
+> ブラウザで読みながら練習したい場合は、教材と Vim 形式の練習エディタを並べた
+> インタラクティブ版を利用できます：
+> [learning-vim.phpz.org](https://learning-vim.phpz.org/)。
+> Web プロジェクトのソースコードは
+> [dofy/learning-vim](https://github.com/dofy/learning-vim) で公開しています。
+
 ## はじめに
 
 私自身の経験では、ドキュメントを読んだり他の人の操作を眺めたりするだけで Vim を
