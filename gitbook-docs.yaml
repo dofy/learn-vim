@@ -1,0 +1,12 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+site:
+  title: Learn VIM
+  structure:
+    - type: space
+      key: learn-vim
+      title: Learn VIM
+      path: learn-vim
+      default: true
+      content:
+        directory: ./
