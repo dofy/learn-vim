@@ -78,7 +78,7 @@ the buffer is the file history of the current Vim session.
 
 ```vim
 :ls
-  1 #h   "chapter01.md"                  line 47
+  1 #h   "chapter01.md"                  line 66
   2 %a   "chapter02.md"                  line 1
 Press ENTER or type command to continue
 ```

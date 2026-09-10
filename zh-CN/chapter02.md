@@ -68,7 +68,7 @@ const func = (win, doc) => {
 
 ```vim
 :ls
-  1 #h   "chapter01.md"                  line 47
+  1 #h   "chapter01.md"                  line 60
   2 %a   "chapter02.md"                  line 1
 Press ENTER or type command to continue
 ```
