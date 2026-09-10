@@ -64,17 +64,16 @@ See the effect, the search results are clear at a glance, but this is sometimes
 a kind of trouble, because the highlight does not think so, it will always
 highlight, until you use `:set nohlsearch` to turn it off.
 
-But this requires you to turn it on when you need it, and turn it off when you
-don't need it. Is there a better solution? of course! See the ultimate answer
-below:
+A direct solution is `:nohlsearch` (abbreviated `:noh`). It clears the current
+highlight without disabling the `hlsearch` setting, so the next search will
+still be highlighted.
 
-> **Search for a string that does not exist**
+> Run `/set`, then `:noh`, and finally `n`. The search history and next match
+> still work; only the highlight was cleared.
 
-Usually I use the command `/lfw` to clear the search highlight. One is because
-the combination of `lfw` is generally not available (not applicable to this
-document...), and the other is that the combination of these three letters is
-more comfortable to press, and the fingers basically do not need to move (you
-feel it).
+If you use this often, add `nnoremap <Esc><Esc> :nohlsearch<CR>` to `.vimrc`.
+Pressing `Esc` twice will clear highlights. `nnoremap` creates a non-recursive
+mapping that is active only in Normal mode.
 
 ## Repeat the last command
 

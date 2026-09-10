@@ -1,46 +1,36 @@
-# Chapter 6: Block Operations
+# Chapter 6: Visual Block Editing
 
-We often come across a situation where we have a multi-line text somewhere and
-we want to copy it into our code to initialize an array of array. Most of the
-time we do this:
+Visual Block mode selects a rectangle and edits the same column across several
+lines. For example, turning plain lines into array items requires adding quotes
+and commas to every line.
 
-- Write the array declaration;
-- copy the contents into parentheses (roughly the length of the text below)
-- Then add `'` at the beginning of the line, `',` at the end of the line, and
-  repeat until the last line (imagine 50 lines of text).
-
-> With Vim, you don't have to do this, just press `17gg` and follow the
-> instructions for the selected line.
+> Search for `/^apple$` in the block below and place the cursor on its `a`. Then
+> press `Ctrl-v 4j $ A ', Esc`. Spaces only separate the steps; do not type them.
 
 ```javascript
-const myArray = [
-Ctrl-v to enter block operation, $ to the end of the line, j to the next line (do it!).
-Press j to the next line
-There are many lines below, so let's jump a few more lines with 4j
-https://www.yahaha.net
-https://www.yahaha.net
-Look at the line number later and jump! Now press A to insert, then enter <single quote><comma><Esc> to complete the first step.
-// Oops... Jump too much, no problem, press k to go back to the previous line
+var myArray = [
+apple
+banana
+cherry
+durian
+elderberry
 ];
 ```
 
-> Now that you've completed the first step, you still need to add the leading
-> `'`, press `17gg` to go back to that line and do it again, but this time
-> there are three things to change:
->
-> 1. press `0` instead of `$` on the first line, because this time you want
->    to insert at the beginning of the line;
-> 1. when pressing `A` at the end of the last line, press `I` instead, because
->    in block operations `A` inserts after the character and `I` inserts before
->    the character;
-> 1. press `<single quote><Esc>` at the end.
->
-> Finally, to finish up, `22gg$x` deletes `,` at the end of the last line, and
-> then `17gg7==` indents the code a bit.
->
-> Done!
+Here is what happened: `Ctrl-v` entered Visual Block mode, `4j` selected five
+lines, `$` extended each selection to line end, and `A` appended text at the
+right edge. While typing `',`, only the first line changed visibly; pressing
+`Esc` applied the edit to every selected line.
 
-_Note: Selecting the beginning and end of a line can also be done after
-selecting what to work with, i.e. `Ctrl-v jjj$A',<Esc>`_
+> Search for `/^apple$` again and use `Ctrl-v 4j I ' Esc` to insert a quote at
+> the start of all five lines. Each item should now look like `'apple',`. If the
+> selection or text is wrong, one `u` undoes the entire block edit.
 
-Next we talk about [macros in Vim](chapter07.md).
+_Note: `I` and `A` are the most useful block-edit commands. Ordinary `i` and
+`a` affect only the cursor position. With uneven line lengths, inspect the
+selection before changing it._
+
+Block editing fits regular column changes. When each line needs the same
+multi-step sequence, a macro is usually a better tool.
+
+Next, learn about [macros in Vim](chapter07.md).

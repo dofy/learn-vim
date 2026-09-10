@@ -60,8 +60,9 @@ const func = (win, doc) => {
 };
 ```
 
-[下一章](chapter03.md)将介绍文档的修改，在这之前先简单介绍一下 Vim 的 buffer，简
-单理解 buffer 就是当前 Vim session 的文件历史记录。
+[下一章](chapter03.md)将介绍文档的修改。在这之前先认识 Vim 的 buffer：buffer 是
+一个已经载入内存、可供编辑的文本内容，不等同于窗口，也不只是文件历史记录。一个
+buffer 可以显示在多个窗口中；关闭窗口也不一定会删除 buffer。
 
 > 现在你的 buffer 中应该已经有两个文件了，你可以用 `:buffers` 或 `:ls` 命令查看
 > ，看到 buffer 列表了吧，大概是这个样子的：
@@ -79,7 +80,8 @@ Press ENTER or type command to continue
 > - `:bp` 打开缓存中上一个文件
 > - `:b<N>` 打开缓存中第 N 个文件
 >
-> 你也可以使用 `:bdelete<N>` 来删除所要关闭的缓冲区，缩写 `:bd<N>`。
+> 你也可以使用 `:bdelete <N>` 从列表中删除指定缓冲区，缩写 `:bd <N>`。如果其中有
+> 未保存的修改，Vim 会拒绝删除；不要急着加 `!`，先确认修改是否还需要。
 >
 > 当然你也可以使用 `:Ex` 命令，选择 chapter03.md 并打开，进
 > 入[第三章](chapter03.md)。

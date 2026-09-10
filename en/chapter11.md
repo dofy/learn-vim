@@ -94,8 +94,8 @@ last search".
 That's it — from cursor movement to multi-file batch operations, these eleven
 chapters cover the vast majority of Vim skills you'll use daily. If you run into
 any problems with Vim, or the tutorial misses some common operation, feel free to
-raise it in [issues](../../issues), and I'll do my best to answer or add it to
-the tutorial.
+raise it in [issues](https://github.com/dofy/learn-vim/issues), and I'll do my
+best to answer or add it to the tutorial.
 
 **Thanks again for your interest! If you love, please share. Love life, love
 VIM!**

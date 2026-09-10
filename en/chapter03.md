@@ -35,10 +35,22 @@ mode._
 - `c<X>` delete the specified content and save it to the Vim clipboard, and
   enter
 
-_Note: The `<X>` part is a description of the operation content. If you want to
-delete a word, enter `dw` or `de`. If you want to copy the content from the
-current position to the end of the line, enter `y$`. If you want to delete the
-next 3 characters and insert them, enter `c3l`, and so on._
+### Vim's command grammar
+
+This is the most useful pattern in Vim: many edits can be read as
+`[count] + operator + motion`.
+
+- The operator says what to do: `d` deletes, `c` changes, and `y` copies.
+- The motion says how far: `w` to the next word, `$` to line end, `}` to the
+  next paragraph.
+- A count repeats the action: `2dw` deletes two words; `d2w` does the same.
+
+Thus `dw` means “delete to the next word,” `c$` means “change to line end,” and
+`y}` means “copy to the next paragraph.” Each new motion you learn immediately
+becomes a new way to delete, change, or copy; there is no separate shortcut list.
+
+_Note: Repeating an operator makes it linewise: `dd`, `cc`, and `yy`. After
+deleting, `c` enters Insert mode while `d` stays in Normal mode._
 
 ### Copy
 
@@ -63,13 +75,20 @@ Cut ABC and paste it in front of XYZ to make this part look like
 Cut and paste it in front of ABC XYZ.
 ```
 
+> On an ordinary line, try `dw`, `u`, `c$`, type a few characters, `Esc`, then
+> `u`. Before each command, say its operator and range. Finish by undoing any
+> remaining practice edits.
+
 ### Replace
 
 - `r<X>` replace the current character with X
 - `gu<X>` convert the specified text to lowercase
 - `gU<X>` convert the specified text to uppercase
-- `:%s/<search>/<replace>/` find the search content and replace it with the
-  replace content
+- `:%s/<search>/<replace>/g` replace every match on every line in the file
+
+`:s` works on the current line and replaces only its first match by default.
+`%` expands the range to the whole file, `g` replaces every match per line, and
+adding `c` (`gc`) asks for confirmation at each match.
 
 > Try changing the case of the following text
 

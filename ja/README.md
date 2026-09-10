@@ -35,11 +35,15 @@ git clone https://github.com/dofy/learn-vim.git
 cd learn-vim/ja
 ```
 
-3. `chapter01.md` を Vim で開きます。
+3. 最初のファイル `vim-modes.md` を Vim で開きます。
 
 ```bash
-vim chapter01.md
+vim vim-modes.md
 ```
+
+Vim を初めて使う場合は、先に [Vim のモード](vim-modes.md)を一読してください。
+暗記する必要はありません。`Esc` でノーマルモードへ戻り、そこから次の操作を始める
+ことだけ覚えておきましょう。
 
 ## 表記ルール
 
@@ -81,6 +85,7 @@ _注意：コマンドでは大文字と小文字が区別されます（注意�
 
 ### 基本操作
 
+1. [始める前に：Vim のモード](vim-modes.md)
 1. [第 1 章：カーソルの移動](chapter01.md)
 1. [第 2 章：ファイルを開く、内容を検索する](chapter02.md)
 1. [第 3 章：文書の編集と保存](chapter03.md)
@@ -95,7 +100,6 @@ _注意：コマンドでは大文字と小文字が区別されます（注意�
 
 ### 追加コンテンツ
 
-1. [Vim のモード](vim-modes.md)
 1. [Vim プラグイン](vim-plugin.md)
 1. [おすすめプラグイン](plugins/index.md)
    1. [NERDTree](plugins/nerdtree.md)

@@ -38,11 +38,15 @@ git clone https://github.com/dofy/learn-vim.git
 cd learn-vim/en
 ```
 
-3. open the file `chapter01.md` in Vim
+3. open the starting file `vim-modes.md` in Vim
 
 ```bash
-vim chapter01.md
+vim vim-modes.md
 ```
+
+If this is your first time using Vim, read [Vim Modes](vim-modes.md) first.
+You do not need to memorize it; just remember that `Esc` returns you to Normal
+mode, where the next operation can begin.
 
 ## Formatting Rules
 
@@ -85,6 +89,7 @@ symbols such as the current line)_
 
 ### Basic operations
 
+1. [Before You Begin: Vim Modes](vim-modes.md)
 1. [Chapter 1: Cursor Movement](chapter01.md)
 1. [Chapter 2: Opening Files, Finding Content](chapter02.md)
 1. [Chapter 3: Modify and Save Documents](chapter03.md)
@@ -99,7 +104,6 @@ symbols such as the current line)_
 
 ### Additional content
 
-1. [Vim Modes](vim-modes.md)
 1. [Vim plugins](vim-plugin.md)
 1. [Plugin Recommendations](plugins/index.md)
    1. [NERDTree](plugins/nerdtree.md)

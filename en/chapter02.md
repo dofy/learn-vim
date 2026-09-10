@@ -54,8 +54,8 @@ In Vim, you can use `%` to match `(` and `)`, `[` and `]`, `{` and `}`. When the
 cursor is on one of the symbols, press `%`, the cursor will jump to the other
 symbol that matches it.
 
-> Press `%` on the `()[]{}` characters in the following text to see the effect,
-> and then press `n` to continue searching.
+> Press `%` on the `()[]{}` characters in the following text to see the effect.
+> Press `%` repeatedly to jump back and forth between each matching pair.
 
 ```javascript
 const func = (win, doc) => {
@@ -69,9 +69,10 @@ const func = (win, doc) => {
 };
 ```
 
-[Next Chapter](chapter03.md) will introduce the modification of the document.
-Before that, let's briefly introduce the buffer of Vim. Simply understand that
-the buffer is the file history of the current Vim session.
+[Next Chapter](chapter03.md) introduces editing. First, meet the Vim buffer: a
+buffer is text loaded into memory for editing. It is not a window or merely a
+file history. One buffer can appear in several windows, and closing a window
+does not necessarily remove its buffer.
 
 > Now you should have two files in your buffer, you can use `:buffers` or `:ls`
 > command to view, see the buffer list, probably like this:
@@ -89,8 +90,9 @@ Press ENTER or type command to continue
 > - `:bp` open the previous file in the buffer
 > - `:b<N>` open the Nth file in the buffer
 >
-> Also you can use `:bdelete<N>` to delete the buffer you want to close, the
-> abbreviation is `:bd<N>`.
+> Use `:bdelete <N>` (or `:bd <N>`) to remove a buffer from the list. Vim will
+> refuse if it contains unsaved changes; do not immediately add `!` until you
+> have decided whether those changes matter.
 >
 > Of course, you can also use the `:Ex` command, select `chapter03.md` and open
 > it, enter [Chapter 3](chapter03.md).

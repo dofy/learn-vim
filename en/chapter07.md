@@ -1,54 +1,54 @@
-# Chapter 7: Vim Macros
+# Chapter 7: Macros in Vim
 
-Macros are a more advanced topic in Vim (and any other editor). If you've
-mastered the previous chapters, you're already a Vim master. So, let's take it
-to the next level.
+A macro records a sequence of Normal-mode actions into a register and replays
+it as needed. It fits tasks where every line needs the same steps but a Visual
+Block edit is not convenient.
 
-Do you remember the example of converting text to an array in the
-[previous chapter](chapter06.md)? We'll do the same thing, but this time with
-macros.
+We will repeat the array exercise from the [previous chapter](chapter06.md),
+this time with a macro.
 
-> `16gg` Jump to the start line where you're ready to start processing, follow
-> the instructions, see the effect first and then explain.
+> Search for `/^Mercury$`, press `qa` to record into register `a`, then perform
+> `I' Esc A ', Esc j q`. Spaces only group the steps. Use `@@` on the next
+> line, then `3@a` on the remaining three lines.
 
 ```javascript
 var myArray = [
-Press qa to start recording the macro, and then press I<single quote><Esc>A<single quote><comma><Esc>jq7@a
-Me too
-Me too
-Me too
-Me too
-Me too
-Me too
-Me too
+Mercury
+Venus
+Earth
+Mars
+Jupiter
 ];
 ```
 
-OMG! What happened, did you get a cold sweat? The results of the previous two
-block operations were completed in an instant, and finally a little finishing
-work, remove the comma at the end of the last line, indent the collective, done!
+Each item should now look like `'Mercury',`, with the cursor on the `];` line.
 
-Next, let's explain the operation just now:
+The command breaks down like this:
 
-- `q` is to start recording the macro, `a` is to give the macro recording
-  process a storage location, which can be 0-9 or a-z;
-- Then `I<single quote><Esc>A<single quote><comma><Esc>j` is the operation
-  process of the entire macro you recorded this time, which means inserting a
-  single quote at the beginning of the line, inserting a single quote and a
-  comma at the end of the line, and jumping to the next line;
-- Pressing `q` next ends this macro recording;
-- `@` is to call up the macro, `a` is the name (storage location) of the macro
-  to be called up, and the `7` in front of it should be clear, that is, to
-  execute 7 times.
+- `q` starts recording and `a` chooses the register; a-z are commonly used;
+- `I' Esc A ', Esc j` adds characters at both ends and moves down one line;
+- the second `q` stops recording;
+- `@a` runs the macro, `@@` repeats the last-used macro, and a count repeats it.
 
-_Tips: `@@` calls up the last macro executed again._
+## Designing reliable macros
+
+- Perform one line manually first, verify it, undo, and then record.
+- End the macro by moving to the next target so repetitions line up.
+- Prefer relative actions such as `0`, `$`, `f<X>`, and text objects over fixed
+  columns.
+- Test once with `@a` before running `<N>@a`.
+- Do not use an arbitrarily large count: the macro may edit following content.
+
+Use `:reg a` to inspect the recorded keys. A macro is simply text stored in a
+register, which is why recording begins by naming one.
+
+> Run `:reg a`, find register `a`, and see whether you can recognize the
+> recorded actions. To restart, press `u` until the original text is restored,
+> then record again from the first item.
 
 ---
 
-That wraps up the basics of Vim. But to truly make Vim flow effortlessly, there
-are a few more "inner skills" worth learning: text objects for precisely
-selecting an edit range, registers for mastering copy and paste, marks and jumps
-for leaving a trail through your code, and cross-file batch operations. We'll
-tackle each of them in the next few chapters.
+The fundamentals are now in place. The next chapters cover text objects,
+registers, marks and jumps, and multi-file operations.
 
-[Next Chapter](chapter08.md) introduces text objects.
+The [next chapter](chapter08.md) introduces text objects.

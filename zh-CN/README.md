@@ -32,11 +32,14 @@ git clone https://github.com/dofy/learn-vim.git
 cd learn-vim/zh-CN
 ```
 
-3. 用 Vim 打开文件 `chapter01.md`
+3. 用 Vim 打开起始文件 `vim-modes.md`
 
 ```bash
-vim chapter01.md
+vim vim-modes.md
 ```
+
+第一次使用 Vim 时，建议先读一遍 [Vim 的模式](vim-modes.md)。不需要背完，只要记住：
+按 `Esc` 可以回到 Normal 模式，再从那里开始下一条操作。
 
 ## 排版规范
 
@@ -76,6 +79,7 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ### 基础操作
 
+1. [开始之前：Vim 的模式](vim-modes.md)
 1. [第一章：光标的移动](chapter01.md)
 1. [第二章：打开文件、查找内容](chapter02.md)
 1. [第三章：文档的修改与保存](chapter03.md)
@@ -90,7 +94,6 @@ _注意：命令区分大小写（需要注意的事项会出现在当前行这�
 
 ### 附加内容
 
-1. [Vim 的模式](vim-modes.md)
 1. [Vim 插件](vim-plugin.md)
 1. [插件推荐](plugins/index.md)
    1. [NERDTree](plugins/nerdtree.md)

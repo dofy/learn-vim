@@ -5,6 +5,10 @@ Welcome to Chapter 1, this chapter will learn simple cursor movement operations.
 If you already have a certain foundation, this part can be skipped, directly `G`
 to the end of the document according to the operation into the next chapter.
 
+Before starting, press `Esc` to make sure you are in Normal mode. Motions are
+not isolated shortcuts to memorize: later you will combine them with delete,
+change, and copy operations. For now, focus on describing where to move.
+
 ## Move the cursor
 
 ### Unit level
@@ -32,6 +36,10 @@ named chapter01.md via following command "vim chapter01.md"
 and welcome to https://yahaha.net :)
 ```
 
+> Start on `This` and use only word motions to reach `GitHub`, `https`, and
+> `learn-vim`. If you overshoot, use `b` to go back. Notice how `w` and `W`
+> behave differently inside a URL.
+
 ### Block level
 
 - `gg` to the first line of the document
@@ -57,6 +65,20 @@ actually two commands above: one is executed immediately after typing, such as
 `gg`; the other is to enter `:` first (there will be a `/` first), this type of
 command needs to be executed after the input is completed. Press Enter, which is
 the same in the following tutorials._
+
+## Counts and motions
+
+Most motions accept a count. Instead of pressing `j` ten times, estimate the
+distance and use `10j`. You do not have to guess perfectly: `8j`, followed by a
+small `j` or `k` adjustment, is usually faster.
+
+- `3w` moves forward three words
+- `5j` moves down five lines
+- `2Ctrl-d` moves down two half-pages
+
+> Use `5j` from this line and then `5k` to return. If you miss, `u` will not
+> help: it undoes text changes, not cursor movement. Move back in the opposite
+> direction instead.
 
 > Now you can swim in the current file. When you are familiar with various
 > movement operations, you can locate the current document to the last line by

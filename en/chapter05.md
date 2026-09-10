@@ -1,5 +1,14 @@
 # Chapter 5: Splitting Windows and Tabs
 
+First separate three concepts that are easy to confuse:
+
+- a buffer is text loaded into memory for editing;
+- a window is a viewport displaying a buffer;
+- a tab page is a layout containing one or more windows.
+
+One buffer can appear in two windows, and one tab page can hold several
+windows. Vim tabs are therefore not a “one tab, one file” model.
+
 ## Splitting Windows and Tabs
 
 You will often encounter situations where you need to edit the current document
@@ -26,7 +35,7 @@ when you need to split the screen the most.
 
 ### Move split screen
 
-- `Ctrl-w l` Moves to rightmost window
+- `Ctrl-w L` Moves to rightmost window
 - `Ctrl-w H` Moves to the leftmost side.
 - `Ctrl-w K` Move to the top
 - `Ctrl-w J` Move to the bottom
@@ -46,12 +55,15 @@ right side for a top/bottom to left/right split screen conversion. _
 
 > Practice! Practice! Practice!
 
+> Run `:split` and scroll each window independently. They are two views of the
+> same buffer: edit in one and the other updates too. Undo the edit with `u`,
+> then close the current window with `Ctrl-w c`.
+
 ## Tagged pages
 
-The buffer mentioned in [Chapter 2](chapter02.md) and the split-screen operation
-just mentioned are good for switching between a small number of files. I don't
-think it's convenient to have more than 3 files, but tabs are better for
-switching between multiple files.
+Tab pages are useful for keeping different window layouts: code and tests in
+one tab, documentation and logs in another. For switching files alone, buffers
+from [Chapter 2](chapter02.md) are usually more direct.
 
 ### Create a tab
 
@@ -79,5 +91,9 @@ the list (starting from 0). \_
 - `:-tabc` Close previous tab
 - `:+tabc` Close the next tab
 - `:tabonly` abbreviation `:tabo` close other tabs
+
+> Run `:tabnew chapter01.md`, then `:vsplit chapter02.md`. Use `gt` to switch
+> tab pages and `Ctrl-w w` to switch windows inside the current tab. Finally,
+> run `:close` and `:tabclose` to return to this chapter.
 
 The [next chapter](chapter06.md) will cover block operations.
